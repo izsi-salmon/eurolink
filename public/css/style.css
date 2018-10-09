@@ -11,7 +11,7 @@ html, .black{
 .header{
   display: flex;
   justify-content: space-around;
-  align-content: center;
+  align-items: center;
 }
 
 .header-child{
@@ -153,7 +153,8 @@ html, .black{
 }
 
 .profile-photo{
-  margin-top: 1em;
+    display: block;
+  margin: 1em auto 0 auto;
   max-width: 100%;
 }
 

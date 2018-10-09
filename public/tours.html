@@ -25,11 +25,11 @@
   </div>
   <div class="wrapper">
       <div class="main-content">
-          <h2 class="heading">Tour Title</h2>
-          <p class="main-p tour-info">Next Tour Departs Dubrovnik 28 June 2019, $8150 per person.<br> 
-Dalmatia, Croatia, Slovenia and Venice in 21 days.</p>
-     <br><p class="main-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue lobortis iaculis. Donec consectetur bibendum nunc, non ullamcorper justo luctus sed. In molestie dui nec viverra varius. Nullam quis ipsum interdum, semper odio id, pharetra magna. Phasellus a rhoncus mauris. Fusce vitae tempor metus, vitae porttitor dolor. Cras in lorem ac sem efficitur mollis.</p>
-     <p class="main-p">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur id libero ex. Nunc placerat, lacus nec congue blandit, massa justo lacinia nulla, sed efficitur nulla metus ac mauris. Praesent semper, felis et scelerisque vehicula, dolor metus feugiat justo, eget porta augue dolor eget odio. Praesent ultrices ex nibh, sit amet posuere mauris gravida in. Cras ut lorem vitae metus auctor venenatis. Nullam sapien ex, dapibus ac mollis vitae, convallis sit amet augue. Vestibulum nec lacinia nisl. Ut tellus nisi, pellentesque eget dui ac, sagittis euismod arcu.</p><br>
+          <h2 class="heading" id="tourTitle"></h2>
+          <p class="main-p tour-info">Next Tour Departs <span id="tourDepart"></span> <span id="tourDate"></span>, $<span id="tourPrice"></span> per person.<br> 
+<span id="tourBlurb"></span></p><br>
+          <div id="tourDescription">
+          </div><br>
           <p class="main-p tour-info">Book now, deposit of $500 NZD secures your place</p>
           <p class="main-p tour-info">Any questions? Contact us, we'd love to hear from you. 
 Phone 0800 488 753</p>
@@ -37,7 +37,7 @@ Phone 0800 488 753</p>
      
      <div class="itinerary-box">
          <div class="itinerary-box-title">Full Itinerary</div>
-         <a href="#" class="itinerary-link">Month tour</a>
+         <a href="" class="itinerary-link" id="tourItinerary"><span id="tourMonth"></span> tour</a>
      </div>
      <div class="preview-photos-wrapper">
          <div class="preview-photo"></div>
@@ -58,8 +58,11 @@ Phone 0800 488 753</p>
     </div>
     <p class="copyright-text"> &copy; Copyright 2011 &copy; EuroLink Tours. All Rights Reserved</p>
   </div>
-  
+  <script>
+      var page = 'tours';
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <script src="js/script.js"></script>
+<!--  <script src="js/tours.js"></script>-->
+  <script src="js/global.js"></script>
 </body>
 </html>
