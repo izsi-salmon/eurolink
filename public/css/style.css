@@ -1,0 +1,245 @@
+*{
+  font-family: arial;
+  margin: 0;
+  padding: 0;
+}
+
+html, .black{
+    color: #333333;
+}
+
+.header{
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.header-child{
+  margin: 5% 0 5% 0;
+  max-width: 50%;
+}
+
+.header-child img{
+  min-width: 150px;
+  width: 80%;
+}
+
+.nav-menu{
+    font-size: 0.8em;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* change to darker greys*/
+
+.nav-menu :nth-child(odd){
+    color: #FFF;
+    background-color: #8ACCFF;
+}
+
+.nav-menu :nth-child(even){
+    color: #FFF;
+    background-color: #9FD3FF;
+}
+
+.nav-menu-item{
+    padding: 0.8em;
+}
+
+.nav-tab-open{
+    display: block;
+}
+
+.nav-tab-closed{
+    display: none;
+}
+
+.tab{
+  color: #FFF;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.link{
+  color: #65B7EB;
+  text-decoration: none;
+}
+
+.main-p{
+  font-size: 0.8em;
+  margin-bottom: 1vh;
+}
+
+.nav-tab{
+  background-color: #65B7EB;
+  font-size: 0.7em;
+  padding: 3vw;
+}
+
+.banner-img{
+  height: 40vw;
+  width: 100vw;
+  background-image: url("../images/adriatic-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #65B7EB;
+  position: relative;
+}
+
+.wrapper{
+  margin: 5vh auto 5vh auto;
+  width: 80%;
+}
+
+.heading{
+  font-weight: 200;
+  margin-bottom: 2vh;
+}
+
+.mid-heading{
+  margin-top: 4vh;
+}
+
+.flavour-text{
+  color: #777777;
+  font-style: italic;
+  margin-bottom: 4vh;
+}
+
+.tours-box{
+  border: 1px solid #65B7EB;
+  color: #777777;
+  margin: 0 auto 4vh auto;
+}
+
+.tours-tab{
+  background-color: #65B7EB;
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+  padding: 2vw 7vw;
+}
+
+.tours-tab i{
+  font-size: 1.5em;
+}
+
+.tour-block{
+  margin: 5vh auto;
+  width: 85%;
+}
+
+.tours-tab-open{
+  display: block;
+}
+
+.tours-tab-closed{
+  display: none;
+}
+
+.tour-block-title-flex{
+  display: flex;
+    justify-content: space-between;
+  font-size: 0.75em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.tour-block p{
+  font-size: 0.76em;
+  margin-top: 1vh;
+}
+
+.profile-photo{
+  margin-top: 1em;
+  max-width: 100%;
+}
+
+.tour-info{
+    font-style: italic;
+    font-weight: 600;
+}
+
+.itinerary-box{
+    border: 1px solid #65B7EB;
+    max-width: 350px;
+    margin: 2em auto;
+}
+
+.itinerary-box-title{
+    background-color: #65B7EB;
+    color: #FFF;
+    padding: 1vw;
+    text-align: center;
+}
+
+.itinerary-link{
+    color: #65B7EB;
+    display: block;
+    font-size: 0.9em;
+    padding: 3vw 4vw;
+}
+
+.preview-photos-wrapper{
+    display: flex;
+        justify-content: space-between;
+}
+
+.preview-photo{
+    height: 6em;
+    width: 6em;
+    background: #e3e3e3;
+}
+
+.gallery-link{
+    color: #65B7EB;
+    display: block;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 1em;
+    text-decoration: none;
+}
+
+.footer{
+  background-color: #5C5C5C;
+  color: #FFF;
+  font-size: 0.9em;
+  padding: 2em 1.5em 1.5em 1.5em;
+}
+
+.contact-details{
+  display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+.contact-icon{
+  margin-right: 1em;
+}
+
+.contact-text{
+  font-size: 0.7em;
+}
+
+.sm-icons{
+  display: flex;
+    justify-content: space-between;
+  font-size: 2.5em;
+  margin: 1em auto;
+  width: 50%;
+}
+
+.copyright-text{
+  color: #A8A8A8;
+  font-size: 0.6em;
+  margin-top: 1.5em;
+  text-align: center;
+}
+
+/*
+
+FIX SIDE SCROLL, VW ISSUE???
