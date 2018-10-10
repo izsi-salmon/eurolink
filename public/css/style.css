@@ -35,12 +35,12 @@ html, .black{
 
 .nav-menu :nth-child(odd){
     color: #FFF;
-    background-color: #8ACCFF;
+    background-color: #5C5C5C; // light alt #C4C4C4
 }
 
 .nav-menu :nth-child(even){
     color: #FFF;
-    background-color: #9FD3FF;
+    background-color: #616161; // light alt #BDBDBD
 }
 
 .nav-menu-item{
