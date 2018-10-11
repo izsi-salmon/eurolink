@@ -244,7 +244,12 @@ html, .black{
 @media only screen and (min-width: 768px) {
     
     .header-child{
+      font-size: 1.3em;
       max-width: 70%;
+    }
+    
+    .nav-menu{
+        font-size: 1em;
     }
     
     .heading{
@@ -274,6 +279,24 @@ html, .black{
     
     .tour-block-title{
         font-size: 1.3em;
+    }
+    
+    .itinerary-box{
+        font-size: 1.3em;
+    }
+    
+    .preview-photo{
+        height: 12em;
+        width: 12em;
+    }
+    
+    .footer{
+        font-size: 1.1em;
+    }
+    
+    .sm-icons{
+        font-size: 3.5em;
+        width: 40%;
     }
     
 }
