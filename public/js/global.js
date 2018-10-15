@@ -34,7 +34,7 @@ $.ajax({
         if (page === 'home'){
             initIndexContent();
         } else if(page === 'tours'){
-//            initTourPage(0);      
+            initTourPage(0);      
         } else {
             console.log('error');
         }

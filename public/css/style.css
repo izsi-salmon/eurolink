@@ -80,11 +80,11 @@ html, .black{
 .banner-img{
   height: 40vw;
   width: 100vw;
-  background-image: url("../images/adriatic-1.jpg");
+  background-image: url("http://www.eurolinktours.co.nz/images/Adriatic_with_quote.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #65B7EB;
+  background-color: #EB8944;
   position: relative;
 }
 
@@ -300,6 +300,110 @@ html, .black{
     }
     
 }
+
+@media only screen and (min-width: 1024px) {
+    
+    .header-child{
+      margin: 1em 0 1em 0;
+    }
+    
+    .header-child:last-of-type{
+        opacity: 0;
+    }
+    
+    .nav-menu{
+        display: flex;
+        font-size: 1em;
+    }
+    
+    .nav-menu :nth-child(odd), .nav-menu :nth-child(even){
+        background: #65B7EB;
+    }
+    
+    .nav-menu-item{
+        border-right: solid 0.001em #6EC7FF;
+        padding: 2em;
+        flex: 1;
+    }
+    
+    .nav-menu-item:hover{
+        background: #6EC7FF;
+    }
+    
+    .banner-img{
+        height: 25vw;
+        width: 100vw;
+    }
+    
+    .heading{
+        font-size: 3em;
+    }
+    
+    .main-content{
+        position: relative;
+        height: 35em;
+    }
+    
+    .flavour-text{
+        width: 40%;
+    }
+    
+    .main-p{
+        width: 60%;
+    }
+    
+    .tours-box{
+        top: 0;
+        right: 0;
+        position: absolute;
+        margin-left: 2em;
+        width: 35%;
+    }
+    
+    .tours-tab{
+        justify-content: center;
+        padding: 0.5em;
+    }
+    
+    .tours-tab :nth-last-child(1){
+        display: none;
+    }
+    
+    .tours-tab-open{
+        max-height: 30em;
+        overflow-y: scroll;
+    }
+    
+    .tour-block p{
+    }
+    
+    .tour-block-title{
+    }
+    
+    .tour-block-title{
+    }
+    
+    .itinerary-box{
+    }
+    
+    .preview-photo{
+    }
+    
+    .footer{
+    }
+    
+    .sm-icons{
+    }
+    
+}
+
+/* PLAN
+
+- give main-content padding so that content sits centered
+- use em
+- use position for box content
+
+*/
 
 /*
 
