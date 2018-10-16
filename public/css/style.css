@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 *{
-  font-family: arial;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -80,7 +82,7 @@ html, .black{
 .banner-img{
   height: 40vw;
   width: 100vw;
-  background-image: url("http://www.eurolinktours.co.nz/images/Adriatic_with_quote.jpg");
+  background-image: url("http://www.croatianvillas.com/wp-content/uploads/adriatic-sea-croatia.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -105,13 +107,13 @@ html, .black{
 .flavour-text{
   color: #777777;
   font-style: italic;
-  margin-bottom: 4vh;
+  margin-bottom: 2em;
 }
 
 .tours-box{
   border: 1px solid #65B7EB;
   color: #777777;
-  margin: 0 auto 4vh auto;
+  margin: 2em auto 4em auto;
 }
 
 .tours-tab{
@@ -154,7 +156,7 @@ html, .black{
 
 .profile-photo{
     display: block;
-  margin: 1em auto 0 auto;
+  margin: 2em auto 0 auto;
   max-width: 100%;
 }
 
@@ -339,25 +341,47 @@ html, .black{
         font-size: 3em;
     }
     
+    .wrapper{
+        max-width: 1250px;
+    }
+    
     .main-content{
-        position: relative;
-        height: 35em;
+        display: flex;
+            justify-content: space-between;
+            align-items: center;
+    }
+    
+    .col-left{
+        width: 50%;
+    }
+    
+    .margin-right{
+        margin-right: 2em;
+    }
+    
+    .margin-left{
+        margin-left: 2em;
+    }
+    
+    .reverse-flex{
+        flex-direction: row-reverse;
+    }
+    
+    .separator{
+        border-bottom: 1px solid #c8c8c8;
+        width: 80%;
+        margin: 4em auto;
     }
     
     .flavour-text{
-        width: 40%;
     }
     
     .main-p{
-        width: 60%;
     }
     
     .tours-box{
-        top: 0;
-        right: 0;
-        position: absolute;
-        margin-left: 2em;
-        width: 35%;
+        margin: 0;
+        width: 429px;
     }
     
     .tours-tab{
@@ -370,7 +394,7 @@ html, .black{
     }
     
     .tours-tab-open{
-        max-height: 30em;
+        max-height: 500px;
         overflow-y: scroll;
     }
     
@@ -390,9 +414,22 @@ html, .black{
     }
     
     .footer{
+        margin-top: 7em;
+        padding: 4em 15em 1em; 15em;
     }
     
     .sm-icons{
+        justify-content: flex-end;
+        margin: -1em 0 0 0;
+        width: 100%;
+    }
+    
+    .sm-icons :first-child{
+        margin-right: 1em;
+    }
+    
+    .copyright-text{
+        margin-top: 4em;
     }
     
 }
