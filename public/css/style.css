@@ -10,6 +10,10 @@ html, .black{
     color: #333333;
 }
 
+.strong{
+    font-weight: 600;
+}
+
 .header{
   display: flex;
   justify-content: space-around;
@@ -24,6 +28,10 @@ html, .black{
 .header-child img{
   min-width: 150px;
   width: 80%;
+}
+
+.header-contact{
+    display: none;
 }
 
 .nav-menu{
@@ -49,6 +57,11 @@ html, .black{
     padding: 0.8em;
 }
 
+.nav-menu-item:hover{
+    background: #6EC7FF;
+    transition: 0.5s;
+}
+
 .nav-tab-open{
     display: block;
 }
@@ -65,6 +78,8 @@ html, .black{
 
 .link{
   color: #65B7EB;
+  padding-bottom: 0.2em;
+  border-bottom: 0.1em solid rgba(0,0,0,0);
   text-decoration: none;
 }
 
@@ -81,7 +96,7 @@ html, .black{
 
 .banner-img{
   height: 40vw;
-  width: 100vw;
+  width: 100%;
   background-image: url("http://www.croatianvillas.com/wp-content/uploads/adriatic-sea-croatia.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -143,10 +158,17 @@ html, .black{
 
 .tour-block-title-flex{
   display: flex;
-    justify-content: space-between;
+    justify-content: space-between; // !!!!!!!??????????
+    align-items: flex-start;
   font-size: 0.75em;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.link:hover{
+   padding-bottom: 0.2em;
+   border-bottom: 0.1em solid #65B7EB;
+    transition: 0.1s;
 }
 
 .tour-block p{
@@ -236,6 +258,15 @@ html, .black{
   width: 50%;
 }
 
+.sm-icons a:visited{
+    color: inherit;
+}
+
+.sm-icons a:active, .sm-icons a:hover{
+    color: #65B7EB;
+    transition: 0.3s;
+}
+
 .copyright-text{
   color: #A8A8A8;
   font-size: 0.6em;
@@ -309,8 +340,35 @@ html, .black{
       margin: 1em 0 1em 0;
     }
     
-    .header-child:last-of-type{
-        opacity: 0;
+    .nav-button{
+        display: none;
+    }
+    
+    .header-contact{
+        display: block;
+        text-align: right;
+    }
+    
+    .header-contact-text{
+        font-size: 0.8em;
+        margin-bottom: 0.3em;
+    }
+    
+    .header-sm{
+        font-size: 1.3em;
+    }
+    
+    .header-sm a{
+        margin-left: 0.5em;
+    }
+    
+    .header-sm a:active, .header-sm a:visited{
+        color: inherit;
+    }
+    
+    .header-sm a:hover{
+        color: #65B7EB;
+        transition: 0.3s;
     }
     
     .nav-menu{
@@ -318,23 +376,13 @@ html, .black{
         font-size: 1em;
     }
     
-    .nav-menu :nth-child(odd), .nav-menu :nth-child(even){
-        background: #65B7EB;
-    }
-    
     .nav-menu-item{
-        border-right: solid 0.001em #6EC7FF;
         padding: 2em;
         flex: 1;
     }
     
-    .nav-menu-item:hover{
-        background: #6EC7FF;
-    }
-    
     .banner-img{
         height: 25vw;
-        width: 100vw;
     }
     
     .heading{
@@ -345,7 +393,7 @@ html, .black{
         max-width: 1250px;
     }
     
-    .main-content{
+    .main-content-index{
         display: flex;
             justify-content: space-between;
             align-items: center;
@@ -433,14 +481,6 @@ html, .black{
     }
     
 }
-
-/* PLAN
-
-- give main-content padding so that content sits centered
-- use em
-- use position for box content
-
-*/
 
 /*
 
