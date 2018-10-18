@@ -53,7 +53,9 @@ html, .black{
     background-color: #616161; // light alt #BDBDBD
 }
 
-.nav-menu-item{
+a.nav-menu-item{
+    display: block;
+    text-decoration: none;
     padding: 0.8em;
 }
 
@@ -158,15 +160,13 @@ html, .black{
 
 .tour-block-title-flex{
   display: flex;
-    justify-content: space-between; // !!!!!!!??????????
-    align-items: flex-start;
+    justify-content: space-between;
   font-size: 0.75em;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .link:hover{
-   padding-bottom: 0.2em;
    border-bottom: 0.1em solid #65B7EB;
     transition: 0.1s;
 }
@@ -274,7 +274,7 @@ html, .black{
   text-align: center;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 500px) {
     
     .header-child{
       font-size: 1.3em;
@@ -321,6 +321,8 @@ html, .black{
     .preview-photo{
         height: 12em;
         width: 12em;
+        max-height: 22vw;
+        max-width: 22vw;
     }
     
     .footer{
@@ -381,6 +383,11 @@ html, .black{
         flex: 1;
     }
     
+    a.nav-menu-item{
+        text-decoration: none;
+        padding: 2em;
+    }
+    
     .banner-img{
         height: 25vw;
     }
@@ -399,8 +406,17 @@ html, .black{
             align-items: center;
     }
     
-    .col-left{
+    .main-content-tours{
+        display: flex;
+            justify-content: space-between;
+    }
+    
+    .left-text{
         width: 50%;
+    }
+    
+    .col-right{
+        margin-left: 5em; 
     }
     
     .margin-right{
@@ -456,14 +472,41 @@ html, .black{
     }
     
     .itinerary-box{
+        border: 1px solid #65B7EB;
+        max-width: 350px;
+        margin: 2.5em 0 0 0;
+    }
+    
+    .itinerary-box-title{
+        background-color: #65B7EB;
+        color: #FFF;
+        padding: 1vw;
+        text-align: center;
+    }
+
+    .itinerary-link{
+        font-size: 0.9em;
+        padding: 2em 3em;
+    }
+    
+    .preview-photos-wrapper{
+        display: block;
     }
     
     .preview-photo{
+        margin: 1em 0;
+        width: 14em;
+        height: 14em;
+    }
+    
+    .gallery-link{
+        margin-top: 1.2em;
+        text-align: center;
     }
     
     .footer{
         margin-top: 7em;
-        padding: 4em 15em 1em; 15em;
+        padding: 4em 15vw 1em 15vw;
     }
     
     .sm-icons{

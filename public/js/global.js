@@ -47,6 +47,9 @@ $.ajax({
 });
 
 
+
+
+
 // ------------------------------- BASIC PAGE FUNCTIONS ----------------------------------
 
 // Toggle Nav menu opening
@@ -98,11 +101,21 @@ if(page === 'home'){
     toursTabButton.addEventListener('click', toggleToursTab, false);
 }
 
+
+
+
+// ------------------------------- INIT INDEX CONTENT ----------------------------------
+
 function initIndexContent(){
     for(i = 0; i < tourData.length; i++) {
         toursTabContent.innerHTML += '<div class="tour-block"><div class="tour-block-title-flex"><a href="tours.html" class="tour-block-title link" id="tourLink'+tourData[i].id+'">'+tourData[i].title+'</a><span class="tour-block-title">$'+tourData[i].price +' NZD</span></div><p><span class="black">Next tour departs: </span>'+tourData[i].depart+' '+tourData[i].date.day+' '+tourData[i].date.month+' '+tourData[i].date.year+'</p><p>'+tourData[i].blurb+'</p></div>';
     }
 }
+
+
+
+
+// ------------------------------- INIT TOUR PAGE CONTENT ----------------------------------
 
 function initTourPage(x){
     console.log('initTourPage is invoked on: '+x);
@@ -121,8 +134,15 @@ function initTourPage(x){
 
 
 
+// ------------------------------- INIT GALLERY PAGE CONTENT ----------------------------------
 
-
+function initGalleryPage(y){
+    console.log('initTourPage is invoked on: '+x);
+    galleryTitle.innerHTML = tourData[y].title;
+    for(i = 0; i < tourData[y].images.length; i++) {
+        imgs.innerHTML += '<img class="gallery-img" src="'+tourData[y].images[i]+'">';
+    }
+}
 
 
 
