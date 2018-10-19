@@ -275,208 +275,208 @@ a.nav-menu-item{
 }
 
 @media only screen and (min-width: 500px) {
-    
+
     .header-child{
       font-size: 1.3em;
       max-width: 70%;
     }
-    
+
     .nav-menu{
         font-size: 1em;
     }
-    
+
     .heading{
         font-size: 2.4em;
     }
-    
+
     .main-p{
       font-size: 1em;
       margin-bottom: 2vh;
     }
-    
+
     .tours-box{
         width: 80%;
     }
-    
+
     .tours-tab{
         font-size: 1.5em;
     }
-    
+
     .tour-block p{
         font-size: 1em;
     }
-    
+
     .tour-block-title{
         font-size: 1.3em;
     }
-    
+
     .tour-block-title{
         font-size: 1.3em;
     }
-    
+
     .itinerary-box{
         font-size: 1.3em;
     }
-    
+
     .preview-photo{
         height: 12em;
         width: 12em;
         max-height: 22vw;
         max-width: 22vw;
     }
-    
+
     .footer{
         font-size: 1.1em;
     }
-    
+
     .sm-icons{
         font-size: 3.5em;
         width: 40%;
     }
-    
+
 }
 
 @media only screen and (min-width: 1024px) {
-    
+
     .header-child{
       margin: 1em 0 1em 0;
     }
-    
+
     .nav-button{
         display: none;
     }
-    
+
     .header-contact{
         display: block;
         text-align: right;
     }
-    
+
     .header-contact-text{
         font-size: 0.8em;
         margin-bottom: 0.3em;
     }
-    
+
     .header-sm{
         font-size: 1.3em;
     }
-    
+
     .header-sm a{
         margin-left: 0.5em;
     }
-    
+
     .header-sm a:active, .header-sm a:visited{
         color: inherit;
     }
-    
+
     .header-sm a:hover{
         color: #65B7EB;
         transition: 0.3s;
     }
-    
+
     .nav-menu{
         display: flex;
         font-size: 1em;
     }
-    
+
     .nav-menu-item{
         padding: 2em;
         flex: 1;
     }
-    
+
     a.nav-menu-item{
         text-decoration: none;
         padding: 2em;
     }
-    
+
     .banner-img{
         height: 25vw;
     }
-    
+
     .heading{
         font-size: 3em;
     }
-    
+
     .wrapper{
         max-width: 1250px;
     }
-    
+
     .main-content-index{
         display: flex;
             justify-content: space-between;
             align-items: center;
     }
-    
+
     .main-content-tours{
         display: flex;
             justify-content: space-between;
     }
-    
+
     .left-text{
         width: 50%;
     }
-    
+
     .col-right{
-        margin-left: 5em; 
+        margin-left: 5em;
     }
-    
+
     .margin-right{
         margin-right: 2em;
     }
-    
+
     .margin-left{
         margin-left: 2em;
     }
-    
+
     .reverse-flex{
         flex-direction: row-reverse;
     }
-    
+
     .separator{
         border-bottom: 1px solid #c8c8c8;
         width: 80%;
         margin: 4em auto;
     }
-    
+
     .flavour-text{
     }
-    
+
     .main-p{
     }
-    
+
     .tours-box{
         margin: 0;
         width: 429px;
     }
-    
+
     .tours-tab{
         justify-content: center;
         padding: 0.5em;
     }
-    
+
     .tours-tab :nth-last-child(1){
         display: none;
     }
-    
+
     .tours-tab-open{
         max-height: 500px;
         overflow-y: scroll;
     }
-    
+
     .tour-block p{
     }
-    
+
     .tour-block-title{
     }
-    
+
     .tour-block-title{
     }
-    
+
     .itinerary-box{
         border: 1px solid #65B7EB;
         max-width: 350px;
         margin: 2.5em 0 0 0;
     }
-    
+
     .itinerary-box-title{
         background-color: #65B7EB;
         color: #FFF;
@@ -486,43 +486,43 @@ a.nav-menu-item{
 
     .itinerary-link{
         font-size: 0.9em;
-        padding: 2em 3em;
+        padding: 2em 2em;
     }
-    
+
     .preview-photos-wrapper{
         display: block;
     }
-    
+
     .preview-photo{
         margin: 1em 0;
         width: 14em;
         height: 14em;
     }
-    
+
     .gallery-link{
         margin-top: 1.2em;
         text-align: center;
     }
-    
+
     .footer{
         margin-top: 7em;
         padding: 4em 15vw 1em 15vw;
     }
-    
+
     .sm-icons{
         justify-content: flex-end;
         margin: -1em 0 0 0;
         width: 100%;
     }
-    
+
     .sm-icons :first-child{
         margin-right: 1em;
     }
-    
+
     .copyright-text{
         margin-top: 4em;
     }
-    
+
 }
 
 /*
