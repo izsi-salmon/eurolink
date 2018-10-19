@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="header">
-    <div class="header-child"><a href="index.html"><img src="http://eurolinktours.co.nz/images/eurolink_logo.jpg" alt="Eurolink Logo"></a></div>
+    <div class="header-child"><a href="index.php"><img src="http://eurolinktours.co.nz/images/eurolink_logo.jpg" alt="Eurolink Logo"></a></div>
     <div class="header-child">
         <div id="navButton" class="nav-button"><span class="tab nav-tab">Our Tours <i class="fas fa-caret-down" id="navTabCaret"></i></span></div>
         <div class="header-contact">
@@ -20,12 +20,12 @@
     </div>
   </div>
   <div id="navTab" class="nav-menu nav-tab-closed">
-        <a href="tours.html" class="nav-menu-item">Adriatic Adventure</a>
-        <a href="tours.html" class="nav-menu-item">Sicily Puglia</a>
-        <a href="tours.html" class="nav-menu-item">Czech Romance</a>
-        <a href="tours.html" class="nav-menu-item">Essence Of Crete</a>
-        <a href="tours.html" class="nav-menu-item">Sri Lanka</a>
-        <a href="tours.html" class="nav-menu-item">Timeless Turkey</a>
+        <a href="tours.php" class="nav-menu-item">Adriatic Adventure</a>
+        <a href="tours.php" class="nav-menu-item">Sicily Puglia</a>
+        <a href="tours.php" class="nav-menu-item">Czech Romance</a>
+        <a href="tours.php" class="nav-menu-item">Essence Of Crete</a>
+        <a href="tours.php" class="nav-menu-item">Sri Lanka</a>
+        <a href="tours.php" class="nav-menu-item">Timeless Turkey</a>
     </div>
     <div class="banner-img">
   </div>
