@@ -1,5 +1,5 @@
 <?php require 'templates/header.php'; ?>
-  <div class="banner-img">
+  <div id="bannerImg">
   </div>
   <div class="wrapper">
 

@@ -2,7 +2,7 @@
 <?php
   $id = $_GET['id'];
 ?>
-  <div class="banner-img">
+  <div id="bannerImg">
   </div>
   <div class="wrapper">
       <div class="main-content-tours">
@@ -26,9 +26,9 @@
 
           <div class="col-right">
               <div class="preview-photos-wrapper">
-                <div class="preview-photo"></div>
-                <div class="preview-photo"></div>
-                <div class="preview-photo"></div>
+                <div class="preview-photo" id="tourImg1"></div>
+                <div class="preview-photo" id="tourImg2"></div>
+                <div class="preview-photo" id="tourImg3"></div>
               </div>
               <a href="gallery.php" id="galleryLink" class="gallery-link">View more photos</a>
           </div>

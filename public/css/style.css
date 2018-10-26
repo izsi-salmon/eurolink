@@ -100,14 +100,13 @@ a.nav-menu-item{
   padding: 3vw;
 }
 
-.banner-img{
+#bannerImg{
   height: 40vw;
   width: 100%;
-  background-image: url("http://www.croatianvillas.com/wp-content/uploads/adriatic-sea-croatia.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #EB8944;
+  background-color: #E3E1E1;
   position: relative;
 }
 
@@ -224,7 +223,12 @@ a.nav-menu-item{
 .preview-photo{
     height: 6em;
     width: 6em;
+    max-width: 24vw;
+    max-height: 24vw;
     background: #e3e3e3;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .gallery-link{
@@ -380,10 +384,8 @@ hr.gallery-divider{
     }
 
     .preview-photo{
-        height: 12em;
-        width: 12em;
-        max-height: 22vw;
-        max-width: 22vw;
+        height: 22vw;
+        width: 22vw;
     }
 
     .footer{
@@ -449,7 +451,7 @@ hr.gallery-divider{
         padding: 2em;
     }
 
-    .banner-img{
+    #bannerImg{
         height: 25vw;
     }
 
@@ -562,6 +564,22 @@ hr.gallery-divider{
     .gallery-img{
       height: 20vw;
       width: 20vw;
+    }
+
+    .gallery-title{
+      display: flex;
+        justify-content: flex-start;
+      align-items: center;
+      font-size: 1.2em;
+      text-transform: uppercase;
+    }
+
+    .gallery-title a{
+      margin-right: 8.5vw;
+    }
+
+    hr.gallery-divider{
+      margin: 1.3em 0 2em 0;
     }
 
     #gallery{

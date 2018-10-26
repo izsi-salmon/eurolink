@@ -15,7 +15,7 @@
         "description": ["A gorgeous scenic fully guided tour travelling in our own van. Our group size is limited to 8 and we will definitely be exploring all the highlights of these beautiful countries. We will enjoy the warmth and hospitality of the Dalmatian and Slovenian people and drive and walk through stunning scenery. We will be exploring the islands of Korcula, Hvar, Vis and Miljet taking various boats and ferries and enjoying warm swims in the azure Adriatic.", "Local guides will bring History alive for us in Dubrovnik, Split, Zagreb and Ljubljiana. Highlights of this tour are the festivals and musicals taking place at this time of year and walking the walls in Dubrovnik is an unforgettable experience.", "Our accommodation is central, friendly – in fact very generous hosts! – clean and reflects the local flavour. A truly magical tour. We make use of top quality local guides in places of special interest to ensure that you get the most informative and interesting tour.", "It is our goal to provide you with a fun, informative, unique and unforgettable travelling experience through these amazing countries."],
         "itinerary": "files/2019adriatic.pdf",
         "banner": "images/adriatic.jpg",
-        "images": ""
+        "images": ["images/0/adriaticCastle.jpg","images/0/adriaticPlitLadies.jpg","images/0/lavenderHarvest.jpg"]
     },
     {
         "id": 1,
@@ -32,8 +32,8 @@
         "blurb": "",
         "description": ["We make a fascinating journey around Sicily learning the secrets of this complicated layered society. Travelling in our own van in a small group limited to 8, we will take our time to get a feel for the history and geography which have forged these people who are Sicilian first Italian second. We enjoy a diversity of food derived from the fusions of Greek Arab and European cuisines which reflect Sicily's interesting past.", "Highlights of this tour include the food! Delicious organic local recipes reflecting the contrast of geographic regions and people. Another highlight is the uniqueness of the landscape from climbing an active Volcano to wandering a maze of lanes in a mountain village hewn from stone (and sweetened with Marzipan) to swimming in the crystal clear waters of the Med.", "We explore the crazy capital Palermo famous for its markets and street foods and take a local guide to spice it up for us. From mountains to sea this place is an island of contrasts.", "We cross the Straits of Messina and travel through Basilicata to UNESCO World Heritage listed Matera. This place built into the side of the ravine is one of Italy's most fascinating icons with stunning churches and cave houses hewn into the rock. We take time on the Salentine Peninsula to absorb the ambience and simplicity of their culture. We cook and eat an array of local dishes then explore the strange stone Trulli houses of Puglia concluding our tour in the gorgeous white town of Ostuni.", "Our accommodation is as varied as the landscape and people and all located in just the right spot! An intriguing tour."],
         "itinerary": "files/2019sicily.pdf",
-        "banner": "",
-        "images": ""
+        "banner": "images/sicily-banner.jpg",
+        "images": ["images/1/Gelato.jpg","images/1/ArtyPalermo.jpg","images/1/SalentinePeninsula.jpg"]
     },
     {
         "id": 2,
@@ -50,8 +50,8 @@
         "blurb": "Experience the diversity of the Austro Hungarian Empire with our 21 day fully guided tour through Vienna, Budapest, Prague and beyond...",
         "description": ["A gorgeous scenic fully guided tour travelling in our own van. Our group size is limited to 8 and we will definitely be exploring all the highlights of these beautiful countries. We will enjoy the warmth and hospitality of the Dalmatian and Slovenian people and drive and walk through stunning scenery. We will be exploring the islands of Korcula, Hvar, Vis and Miljet taking various boats and ferries and enjoying warm swims in the azure Adriatic.", "Local guides will bring History alive for us in Dubrovnik, Split, Zagreb and Ljubljiana. Highlights of this tour are the festivals and musicals taking place at this time of year and walking the walls in Dubrovnik is an unforgettable experience.", "Our accommodation is central, friendly – in fact very generous hosts! – clean and reflects the local flavour. A truly magical tour. We make use of top quality local guides in places of special interest to ensure that you get the most informative and interesting tour.", "It is our goal to provide you with a fun, informative, unique and unforgettable travelling experience through these amazing countries."],
         "itinerary": "files/2018czech.pdf",
-        "banner": "",
-        "images": ""
+        "banner": "images/czech-banner.jpg",
+        "images": ["images/2/czechLoket.JPG","images/2/czechPraguearchitecture.jpg","images/2/czechBudapest.jpg"]
     },
     {
         "id": 3,
@@ -68,7 +68,8 @@
         "blurb": "Athens, Santorini and Crete in 20 days.",
         "description": ["We start our tour gazing at the Acropolis from our Hotel terrace then we take a fabulous guided food walk around the city of Athens. We ferret out the obvious and hidden delights which make Athens special then take a short flight to Santorini to admire the most scenic island of Greece.", "We walk the rim and sail to the volcanic islands and experience living on the edge! This place is definitely a photographer’s paradise.", "Crete is our main destination and from Heraklion we take our own van. Our group size is limited to 8 so we can take a smaller vehicle on those scenic off the beaten track roads like the Amari Valley and Omalos Plateau. The food is a real highlight of this country especially the generosity of our hosts plying us with all their delicious natural produce (their form of Raki will be long remembered!).", "We learn about the Cretan History and hardships under Venetian, Turkish, and German occupation and visit places special to our New Zealand connection at Souda Bay and Mon Preveli. The dramatic scenery of the South coast and White Mountains is impressive and we enjoy the music and dancing often chanced upon at this time of year. The sea is warm the sunsets are beautiful and the evenings balmy.", "Our accommodation reflects the local flavour is centrally located friendly and sometimes comes with a swimming pool! A relaxing and memorable tour."],
         "itinerary": "files/2019crete.pdf",
-        "images": ""
+        "banner": "images/crete-banner.jpg",
+        "images": ["images/3/cookingExperience.jpg","images/3/creteAthens.jpg","images/3/cretePaleochora.jpg"]
     },
     {
         "id": 4,
@@ -85,8 +86,8 @@
         "blurb": "Colombo, Wilpattu National Park, Ancient Cities, Kandy, Nuwara Eliya, ride the Tea Train, Ella, Sinharaja Rainforest, Mirissa Whale Watching and Galle in 18 days.",
         "description": ["Described by Marco Polo as the finest island of its size in the world, Sri Lanka boasts fabulous beaches, stunning mountains and escarpments, rich lowland jungles and beautiful verdant hill country. Home to extensive populations of elephants, leopards and rare endemic bird species plus blue and sperm whales plying the south coast, Sri Lanka has it all!", "The food is a unique fusion of local produce with recipes and spices brought by Arabs Indians Malays Portuguese Dutch and English. A tea drinkers paradise!!!", "We take our own van and driver and set off up to the tea plantations in the hill country around Kandy and visit the elephant sanctuary along the way. We detour up into the cultural triangle to see marvellous cave temples and golden Buddas. We hike in the dramatic landscape of Worlds End and go leopard spotting at Wilpattu National Park. It’s the right time of year for whale watching in Mirissa and we take our time to enjoy the south coast which reflects remnants of Portuguese and Dutch influences.", "This is an exciting adventure allowing plenty of flexibility to follow our own inclinations."],
         "itinerary": "files/2018srilanka.pdf",
-        "banner": "",
-        "images": ""
+        "banner": "images/srilanka-banner.jpg",
+        "images": ["images/4/ElephantsKandy.JPG","images/4/SriLankaTemple.JPG","images/4/SriLankaTrain.JPG"]
     },
     {
         "id": 5,
@@ -103,7 +104,7 @@
         "blurb": "25 days.",
         "description": ["We fly up to the Eastern part of the Black Sea to drive in stunning scenery up to Sumela Monastery which appears etched into the rock face. We then follow the tea and hazelnut plantations along the Black sea coast and head inland to the Kacker Mountains where very few tourists go. We meet the Hemsin people renowned for their hospitality and step back in time joining in their age old holiday celebrations held in August.", "We fly to the Capital Ankara and pick up our own air conditioned vehicle and guide for 20 days.", "We take our time to enjoy all the highlights of Turkey spending 2-3 nights in a place having a chance to really get the feel and savour it. We also have the freedom to stop when and where we want and enjoy having the same guide and driver with us for the duration of the tour.", "Our guides share their passion for the history of a very rich past bringing it alive for us with their knowledge and anecdotes.","Our tour takes place during the local harvest time and as we travel around each region we stop and investigate farming techniques and sample the most delicious fresh apricots, melons, figs, peaches and hazelnuts.","Our accommodation is carefully selected to reflect the local flavour and is friendly, clean and within walking distance of sites of interest."],
         "itinerary": "files/2018turkey.pdf",
-        "banner": "",
-        "images": ""
+        "banner": "images/turkey-banner.jpg",
+        "images": ["images/5/TurkeyCapadocia.jpg","images/5/Turkeymudcrop.jpg","images/5/TurkeyPamukkale.jpg"]
     }
 ]

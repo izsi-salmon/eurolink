@@ -9,6 +9,9 @@ var toursTabButton = document.getElementById('toursTab');
 var toursTabContent = document.getElementById('toursContent');
 var toursTabCaret = document.getElementById('toursTabCaret');
 
+// All pages content
+var bannerImg = document.getElementById('bannerImg');
+
 // Tour page content
 var tourTitle = document.getElementById('tourTitle');
 var tourDepart = document.getElementById('tourDepart');
@@ -19,6 +22,9 @@ var tourDescription = document.getElementById('tourDescription');
 var tourItinerary = document.getElementById('tourItinerary');
 var tourMonth = document.getElementById('tourMonth');
 var galleryLink = document.getElementById('galleryLink');
+var tourImg1 = document.getElementById('tourImg1');
+var tourImg2 = document.getElementById('tourImg2');
+var tourImg3 = document.getElementById('tourImg3');
 
 // Gallery page CONTENT
 var galleryTitle = document.getElementById('galleryTitle');
@@ -112,6 +118,7 @@ if(page === 'home'){
 // ------------------------------- INIT INDEX CONTENT ----------------------------------
 
 function initIndexContent(){
+    bannerImg.style.backgroundImage = "url('images/adriatic-banner.jpg')";
     for(i = 0; i < tourData.length; i++) {
         toursTabContent.innerHTML += '<div class="tour-block"><div class="tour-block-title-flex"><a href="tours.php?id='+tourData[i].id+'" class="tour-block-title link" id="tourLink'+tourData[i].id+'">'+tourData[i].title+'</a><span class="tour-block-title">$'+tourData[i].price +' NZD</span></div><p><span class="black">Next tour departs: </span>'+tourData[i].depart+' '+tourData[i].date.day+' '+tourData[i].date.month+' '+tourData[i].date.year+'</p><p>'+tourData[i].blurb+'</p></div>';
     }
@@ -123,7 +130,9 @@ function initIndexContent(){
 // ------------------------------- INIT TOUR PAGE CONTENT ----------------------------------
 
 function initTourPage(x){
-    console.log('initTourPage is invoked on: '+x);
+    // console.log('initTourPage is invoked on: '+x);
+    bannerImg.style.backgroundImage = "url('"+tourData[x].banner+"')";
+
     tourTitle.innerHTML = tourData[x].title;
     tourDepart.innerHTML = tourData[x].depart;
     tourDate.innerHTML = tourData[x].date.day+' '+tourData[x].date.month+' '+tourData[x].date.year;
@@ -132,6 +141,11 @@ function initTourPage(x){
     tourItinerary.setAttribute('href', tourData[x].itinerary);
     tourMonth.innerHTML = tourData[x].date.month;
     galleryLink.setAttribute('href', 'gallery.php?id='+tourData[x].id);
+
+    tourImg1.style.backgroundImage = "url('"+tourData[x].images[0]+"')";
+    tourImg2.style.backgroundImage = "url('"+tourData[x].images[1]+"')";
+    tourImg3.style.backgroundImage = "url('"+tourData[x].images[2]+"')";
+
     for(i = 0; i < tourData[x].description.length; i++) {
         tourDescription.innerHTML += '<p class="main-p">'+tourData[x].description[i]+'</p>';
     }
@@ -143,6 +157,7 @@ function initTourPage(x){
 // ------------------------------- INIT GALLERY PAGE CONTENT ----------------------------------
 
 function initGalleryPage(y){
+    bannerImg.style.backgroundImage = "url('"+tourData[y].banner+"')";
     galleryTitle.innerHTML = '<a href="tours.php?id='+tourData[y].id+'"><i class="fas fa-chevron-left"></i></a>' + tourData[y].title + '<span></span>';
     // galleryBlurb.innerHTML = tourData[y].blurb;
 }

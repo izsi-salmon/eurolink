@@ -4,7 +4,7 @@
   $directory = "images/".$id;
   $images = glob($directory . "/*.jpg");
  ?>
-  <div class="banner-img">
+  <div id="bannerImg">
   </div>
   <div class="wrapper-gallery">
     <h2 class="gallery-title text-secondary" id="galleryTitle"></h2>
