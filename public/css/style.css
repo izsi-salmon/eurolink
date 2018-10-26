@@ -14,6 +14,10 @@ html, .black{
     font-weight: 600;
 }
 
+.text-secondary{
+  color: #777777;
+}
+
 .header{
   display: flex;
   justify-content: space-around;
@@ -21,7 +25,7 @@ html, .black{
 }
 
 .header-child{
-  margin: 5% 0 5% 0;
+  margin: 1.3em 0 1.3em;
   max-width: 50%;
 }
 
@@ -109,6 +113,11 @@ a.nav-menu-item{
 
 .wrapper{
   margin: 5vh auto 5vh auto;
+  width: 80%;
+}
+
+.wrapper-gallery{
+  margin: 1.3em auto 2em auto;
   width: 80%;
 }
 
@@ -227,6 +236,58 @@ a.nav-menu-item{
     text-decoration: none;
 }
 
+.gallery-title{
+  display: flex;
+    justify-content: space-between;
+  align-items: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.gallery-title a:link, .gallery-title a:active, .gallery-title a:visited, .gallery-title a:hover{
+  color: inherit;
+}
+
+hr.gallery-divider{
+  margin: 1em 0 1.3em 0;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #C7C5C5, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #C7C5C5, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #C7C5C5, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #C7C5C5, #f0f0f0);
+}
+
+#gallery{
+  margin: 0 auto;
+  width: 80vw;
+}
+
+
+@media only screen and (min-width: 320px){
+  #gallery{
+    min-width: 280px;
+  }
+}
+
+@media only screen and (min-width: 350px){
+  #gallery{
+    min-width: 300px;
+  }
+}
+
+@media only screen and (min-width: 375px){
+  #gallery{
+    min-width: 320px;
+  }
+}
+
+.gallery-img{
+  height: 26vw;
+  width: 26vw;
+  object-fit: cover;
+}
+
 .footer{
   background-color: #5C5C5C;
   color: #FFF;
@@ -258,7 +319,7 @@ a.nav-menu-item{
   width: 50%;
 }
 
-.sm-icons a:visited{
+.sm-icons a:link, .sm-icons a:visited{
     color: inherit;
 }
 
@@ -364,7 +425,7 @@ a.nav-menu-item{
         margin-left: 0.5em;
     }
 
-    .header-sm a:active, .header-sm a:visited{
+    .header-sm a:link, .header-sm a:active, .header-sm a:visited{
         color: inherit;
     }
 
@@ -437,12 +498,6 @@ a.nav-menu-item{
         margin: 4em auto;
     }
 
-    .flavour-text{
-    }
-
-    .main-p{
-    }
-
     .tours-box{
         margin: 0;
         width: 429px;
@@ -502,6 +557,16 @@ a.nav-menu-item{
     .gallery-link{
         margin-top: 1.2em;
         text-align: center;
+    }
+
+    .gallery-img{
+      height: 20vw;
+      width: 20vw;
+    }
+
+    #gallery{
+      margin: 0 auto;
+      width: 61vw;
     }
 
     .footer{

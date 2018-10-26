@@ -20,12 +20,11 @@
     </div>
   </div>
     <div id="navTab" class="nav-menu nav-tab-closed">
-        <a href="tours.php" class="nav-menu-item">Adriatic Adventure</a>
-        <a href="tours.php" class="nav-menu-item">Sicily Puglia</a>
-        <a href="tours.php" class="nav-menu-item">Czech Romance</a>
-        <a href="tours.php" class="nav-menu-item">Essence Of Crete</a>
-        <a href="tours.php" class="nav-menu-item">Sri Lanka</a>
-        <a href="tours.php" class="nav-menu-item">Timeless Turkey</a>
+        <a href="tours.php?id=0" class="nav-menu-item">Adriatic Adventure</a>
+        <a href="tours.php?id=1" class="nav-menu-item">Sicily Puglia</a>
+        <a href="tours.php?id=2" class="nav-menu-item">Czech Romance</a>
+        <a href="tours.php?id=3" class="nav-menu-item">Essence Of Crete</a>
+        <a href="tours.php?id=4" class="nav-menu-item">Sri Lanka</a>
+        <a href="tours.php?id=5" class="nav-menu-item">Timeless Turkey</a>
     </div>
-  <div class="banner-img">
-  </div>
+  

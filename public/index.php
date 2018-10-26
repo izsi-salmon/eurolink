@@ -1,5 +1,6 @@
 <?php require 'templates/header.php'; ?>
-
+  <div class="banner-img">
+  </div>
   <div class="wrapper">
 
     <div class="main-content-index">
@@ -50,7 +51,6 @@
     </div>
     <p class="copyright-text"> &copy; Copyright 2011 &copy; EuroLink Tours. All Rights Reserved</p>
   </div>
-
   <script>
       var page = 'home';
   </script>

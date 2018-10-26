@@ -18,6 +18,11 @@ var tourBlurb = document.getElementById('tourBlurb');
 var tourDescription = document.getElementById('tourDescription');
 var tourItinerary = document.getElementById('tourItinerary');
 var tourMonth = document.getElementById('tourMonth');
+var galleryLink = document.getElementById('galleryLink');
+
+// Gallery page CONTENT
+var galleryTitle = document.getElementById('galleryTitle');
+// var galleryBlurb = document.getElementById('galleryBlurb');
 
 // ------------------------------- AJAX CALL ----------------------------------
 
@@ -34,9 +39,9 @@ $.ajax({
         if (page === 'home'){
             initIndexContent();
         } else if(page === 'tours'){
-            initTourPage(0);
-        } else {
-            console.log('error');
+            initTourPage(pageID);
+        } else if(page === 'gallery'){
+            initGalleryPage(pageID);
         }
 
     },
@@ -108,7 +113,7 @@ if(page === 'home'){
 
 function initIndexContent(){
     for(i = 0; i < tourData.length; i++) {
-        toursTabContent.innerHTML += '<div class="tour-block"><div class="tour-block-title-flex"><a href="tours.php" class="tour-block-title link" id="tourLink'+tourData[i].id+'">'+tourData[i].title+'</a><span class="tour-block-title">$'+tourData[i].price +' NZD</span></div><p><span class="black">Next tour departs: </span>'+tourData[i].depart+' '+tourData[i].date.day+' '+tourData[i].date.month+' '+tourData[i].date.year+'</p><p>'+tourData[i].blurb+'</p></div>';
+        toursTabContent.innerHTML += '<div class="tour-block"><div class="tour-block-title-flex"><a href="tours.php?id='+tourData[i].id+'" class="tour-block-title link" id="tourLink'+tourData[i].id+'">'+tourData[i].title+'</a><span class="tour-block-title">$'+tourData[i].price +' NZD</span></div><p><span class="black">Next tour departs: </span>'+tourData[i].depart+' '+tourData[i].date.day+' '+tourData[i].date.month+' '+tourData[i].date.year+'</p><p>'+tourData[i].blurb+'</p></div>';
     }
 }
 
@@ -124,8 +129,9 @@ function initTourPage(x){
     tourDate.innerHTML = tourData[x].date.day+' '+tourData[x].date.month+' '+tourData[x].date.year;
     tourPrice.innerHTML = tourData[x].price;
     tourBlurb.innerHTML = tourData[x].blurb;
-//    tourItinerary.setAttribute('href', tourData[x].itinerary);
+    tourItinerary.setAttribute('href', tourData[x].itinerary);
     tourMonth.innerHTML = tourData[x].date.month;
+    galleryLink.setAttribute('href', 'gallery.php?id='+tourData[x].id);
     for(i = 0; i < tourData[x].description.length; i++) {
         tourDescription.innerHTML += '<p class="main-p">'+tourData[x].description[i]+'</p>';
     }
@@ -137,9 +143,6 @@ function initTourPage(x){
 // ------------------------------- INIT GALLERY PAGE CONTENT ----------------------------------
 
 function initGalleryPage(y){
-    console.log('initTourPage is invoked on: '+x);
-    galleryTitle.innerHTML = tourData[y].title;
-    for(i = 0; i < tourData[y].images.length; i++) {
-        imgs.innerHTML += '<img class="gallery-img" src="'+tourData[y].images[i]+'">';
-    }
+    galleryTitle.innerHTML = '<a href="tours.php?id='+tourData[y].id+'"><i class="fas fa-chevron-left"></i></a>' + tourData[y].title + '<span></span>';
+    // galleryBlurb.innerHTML = tourData[y].blurb;
 }

@@ -1,5 +1,9 @@
 <?php require 'templates/header.php'; ?>
-
+<?php
+  $id = $_GET['id'];
+?>
+  <div class="banner-img">
+  </div>
   <div class="wrapper">
       <div class="main-content-tours">
           <div class="col-left">
@@ -15,7 +19,7 @@
 
             <div class="itinerary-box">
                 <div class="itinerary-box-title">Full Itinerary</div>
-                <a href="" class="itinerary-link" id="tourItinerary"><span id="tourMonth"></span> tour</a>
+                <a href="" target="_blank" class="itinerary-link" id="tourItinerary"><span id="tourMonth"></span> tour</a>
             </div>
 
           </div>
@@ -26,7 +30,7 @@
                 <div class="preview-photo"></div>
                 <div class="preview-photo"></div>
               </div>
-              <a href="#" class="gallery-link">View more photos</a>
+              <a href="gallery.php" id="galleryLink" class="gallery-link">View more photos</a>
           </div>
 
 
@@ -45,6 +49,7 @@
   </div>
   <script>
       var page = 'tours';
+      var pageID = <?= $id ?>;
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <!--  <script src="js/tours.js"></script>-->

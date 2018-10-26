@@ -1,8 +1,19 @@
 <?php require 'templates/header.php'; ?>
-
-  <div class="wrapper">
+<?php
+  $id = $_GET['id'];
+  $directory = "images/".$id;
+  $images = glob($directory . "/*.jpg");
+ ?>
+  <div class="banner-img">
+  </div>
+  <div class="wrapper-gallery">
+    <h2 class="gallery-title text-secondary" id="galleryTitle"></h2>
+    <!-- <span id="galleryBlurb"></span></p><br> -->
+    <hr class="gallery-divider">
       <div id="gallery">
-
+        <?php foreach ($images as $image):?>
+          <img src="<?= $image ?>" class="gallery-img">
+        <?php endforeach; ?>
       </div>
   </div>
 
@@ -18,6 +29,7 @@
 
   <script>
       var page = 'gallery';
+      var pageID = <?= $id ?>;
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="js/global.js"></script>
