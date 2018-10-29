@@ -27,4 +27,3 @@
         <a href="tours.php?id=4" class="nav-menu-item">Sri Lanka</a>
         <a href="tours.php?id=5" class="nav-menu-item">Timeless Turkey</a>
     </div>
-  

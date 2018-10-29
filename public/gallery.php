@@ -11,8 +11,8 @@
     <!-- <span id="galleryBlurb"></span></p><br> -->
     <hr class="gallery-divider">
       <div id="gallery">
-        <?php foreach ($images as $image):?>
-          <img src="<?= $image ?>" class="gallery-img">
+        <?php foreach ($images as $key => $image):?>
+          <img src="<?= $image ?>" class="gallery-img" id="<?= $key ?>">
         <?php endforeach; ?>
       </div>
   </div>
@@ -27,7 +27,17 @@
     <p class="copyright-text"> &copy; Copyright 2011 &copy; EuroLink Tours. All Rights Reserved</p>
   </div>
 
+  <!-- Modals here! :) -->
+  <div class="drop-shadow">
+    <div class="aligner-top"></div>
+      <div class="image-modal">
+        <div class="chevron"><i class="fas fa-chevron-left chevron" id="imagePrev"></i></div> <div id="imageContainer"></div> <div class="chevron"><i class="fas fa-chevron-right chevron" id="imageNext"></i></div>
+      </div>
+    <div class="aligner-bottom"></div>
+  </div>
+
   <script>
+      var imagesArray = <?php echo json_encode($images); ?>;
       var page = 'gallery';
       var pageID = <?= $id ?>;
   </script>

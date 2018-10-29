@@ -1,5 +1,11 @@
 <?php require 'templates/header.php'; ?>
   <div id="bannerImg">
+    <div class="quote-container">
+      <div class="quote-wrapper">
+        <p id="quote"></p>
+        <p id="slideName"></p>
+      </div>
+    </div>
   </div>
   <div class="wrapper">
 
@@ -11,7 +17,7 @@
             Discover the world with Eurolink's fully guided tours. We take you on and off the tourist trail and provide an experience rich in culture, food, sights and sounds of our favourite places...
           </p>
 
-          <p class="main-p">Our tours are organised to maximise our time in each place providing an opportunity to get beneath the tourist façade. We keep our group numbers small to ensure personal and unique tour and with our local contacts you can be assured of an authentic and unforgettable adventure. We enjoy getting off the beaten track and we are renowned fomaking the most of spontaneous events that arise along the way. Our hallmark is that we have a lot of fun with our travelling companions and our group’s interests influence ouitinerary.</p>
+          <p class="main-p">Our tours are organised to maximise our time in each place providing an opportunity to get beneath the tourist façade. We keep our group numbers small to ensure personal and unique tour and with our local contacts you can be assured of an authentic and unforgettable adventure. We enjoy getting off the beaten track and we are renowned for making the most of spontaneous events that arise along the way. Our hallmark is that we have a lot of fun with our travelling companions and our group’s interests influence ouitinerary.</p>
           <p class="main-p">We make use of top quality local guides in places of special interest to ensure that you get the most informative and interesting tour.</p>
           <p class="main-p">It is our goal to provide you with a fun, informative, unique and unforgettable travelling experience through these amazing countries.</p>
         </div>

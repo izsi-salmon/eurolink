@@ -12,6 +12,10 @@ var toursTabCaret = document.getElementById('toursTabCaret');
 // All pages content
 var bannerImg = document.getElementById('bannerImg');
 
+// Index content
+var quote = document.getElementById('quote');
+var slideName = document.getElementById('slideName');
+
 // Tour page content
 var tourTitle = document.getElementById('tourTitle');
 var tourDepart = document.getElementById('tourDepart');
@@ -28,7 +32,7 @@ var tourImg3 = document.getElementById('tourImg3');
 
 // Gallery page CONTENT
 var galleryTitle = document.getElementById('galleryTitle');
-// var galleryBlurb = document.getElementById('galleryBlurb');
+var imageContainer = document.getElementById('imageContainer');
 
 // ------------------------------- AJAX CALL ----------------------------------
 
@@ -112,13 +116,35 @@ if(page === 'home'){
     toursTabButton.addEventListener('click', toggleToursTab, false);
 }
 
+// SLIDESHOW
 
+var arrSlideImages = ["images/adriatic.jpg","images/czech-banner.jpg","images/crete-banner.jpg","images/turkey-banner.jpg"];
+var arrSlideQuotes = ["A fantastic holiday filled with beautiful scenery, history and great travelling companions. Karen and Russel were our tour guides par excellence and we would not hesitate to recommend or travel with them again.", "What a great tour we wished we could go around again!", "Our third tour with Eurolink and Russel and Karen always manage to make it special. Great communicators, they make everything flow so easily", "What an amazing trip everyday a surprise! Thanks to you both for knowing what would comprise a brilliant look and taste of Turkey. A treasure of a trip."];
+var arrSlideNames = ['– Ingrid and George 2015', '– Jim and Jill 2013', '– Pam and Geoff 2014', '– Sandie 2012'];
 
+index = 0;
+
+function slideShow(){
+  bannerImg.style.backgroundImage = "url('"+arrSlideImages[0]+"')";
+  quote.innerHTML = '"'+arrSlideQuotes[0]+'"';
+  slideName.innerHTML = arrSlideNames[0];
+  window.setInterval('auto()', 5000);
+}
+
+function auto(){
+  ++index;
+  if(index === arrSlideImages.length){
+    index = 0;
+  }
+  bannerImg.style.backgroundImage = "url('"+arrSlideImages[index]+"')";
+  quote.innerHTML = '"'+arrSlideQuotes[index]+'"';
+  slideName.innerHTML = arrSlideNames[index];
+}
 
 // ------------------------------- INIT INDEX CONTENT ----------------------------------
 
 function initIndexContent(){
-    bannerImg.style.backgroundImage = "url('images/adriatic-banner.jpg')";
+    slideShow();
     for(i = 0; i < tourData.length; i++) {
         toursTabContent.innerHTML += '<div class="tour-block"><div class="tour-block-title-flex"><a href="tours.php?id='+tourData[i].id+'" class="tour-block-title link" id="tourLink'+tourData[i].id+'">'+tourData[i].title+'</a><span class="tour-block-title">$'+tourData[i].price +' NZD</span></div><p><span class="black">Next tour departs: </span>'+tourData[i].depart+' '+tourData[i].date.day+' '+tourData[i].date.month+' '+tourData[i].date.year+'</p><p>'+tourData[i].blurb+'</p></div>';
     }
@@ -160,4 +186,64 @@ function initGalleryPage(y){
     bannerImg.style.backgroundImage = "url('"+tourData[y].banner+"')";
     galleryTitle.innerHTML = '<a href="tours.php?id='+tourData[y].id+'"><i class="fas fa-chevron-left"></i></a>' + tourData[y].title + '<span></span>';
     // galleryBlurb.innerHTML = tourData[y].blurb;
+    initModal();
 }
+
+// ------------------------------- INIT MODAL ----------------------------------
+
+function initModal(){
+
+  var increment;
+
+  // OPEN
+  $('.gallery-img').click(function(){
+    increment = this.id;
+    $('.drop-shadow').css('display', 'flex');
+    imageContainer.innerHTML = '<img src="'+imagesArray[this.id]+'">';
+    $('body').css('overflow', 'hidden');
+  });
+
+  // closed
+  $('.drop-shadow').click(function(event) {
+    if (!$(event.target).closest('.image-modal').length) {
+      $('body').find('.drop-shadow').css('display', 'none');
+      $('body').css('overflow', 'auto');
+    }
+  });
+
+  // Next Image
+  $('#imageNext').click(function(){
+    ++increment;
+    if(increment === imagesArray.length){
+      increment = 0;
+      imageContainer.innerHTML = '<img src="'+imagesArray[increment]+'">';
+    } else{
+      imageContainer.innerHTML = '<img src="'+imagesArray[increment]+'">';
+    }
+  });
+
+  // Previous Image
+  $('#imagePrev').click(function(){
+    --increment;
+    console.log(increment);
+    if(increment === -1){
+      increment = (imagesArray.length - 1);
+      imageContainer.innerHTML = '<img src="'+imagesArray[increment]+'">';
+    } else{
+      imageContainer.innerHTML = '<img src="'+imagesArray[increment]+'">';
+    }
+  });
+
+}
+
+
+
+
+
+
+
+
+
+
+
+// ------------------------------- END ----------------------------------
