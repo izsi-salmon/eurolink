@@ -29,11 +29,15 @@
 
   <!-- Modals here! :) -->
   <div class="drop-shadow">
-    <div class="aligner-top"></div>
-      <div class="image-modal">
-        <div class="chevron"><i class="fas fa-chevron-left chevron" id="imagePrev"></i></div> <div id="imageContainer"></div> <div class="chevron"><i class="fas fa-chevron-right chevron" id="imageNext"></i></div>
-      </div>
-    <div class="aligner-bottom"></div>
+
+    <div class="close-icon"><i class="fas fa-times"></i></div>
+
+      <div class="aligner-top"></div>
+        <div class="image-modal">
+          <div class="chevron"><i class="fas fa-chevron-left chevron" id="imagePrev"></i></div> <div id="imageContainer"></div> <div class="chevron"><i class="fas fa-chevron-right chevron" id="imageNext"></i></div>
+        </div>
+      <div class="aligner-bottom"></div>
+
   </div>
 
   <script>

@@ -191,9 +191,12 @@ function initGalleryPage(y){
 
 // ------------------------------- INIT MODAL ----------------------------------
 
+// Add key press controls: esc, < >
+
 function initModal(){
 
   var increment;
+  var modalOpen = false;
 
   // OPEN
   $('.gallery-img').click(function(){
@@ -201,18 +204,29 @@ function initModal(){
     $('.drop-shadow').css('display', 'flex');
     imageContainer.innerHTML = '<img src="'+imagesArray[this.id]+'">';
     $('body').css('overflow', 'hidden');
+    modalOpen = true;
   });
 
   // closed
+
+  function closeModal(){
+    $('body').find('.drop-shadow').css('display', 'none');
+    $('body').css('overflow', 'auto');
+    modalOpen = false;
+  }
+
   $('.drop-shadow').click(function(event) {
-    if (!$(event.target).closest('.image-modal').length) {
-      $('body').find('.drop-shadow').css('display', 'none');
-      $('body').css('overflow', 'auto');
+    if (!$(event.target).closest('#imageContainer').length && !$(event.target).closest('.chevron').length ) {
+      closeModal();
     }
   });
 
   // Next Image
   $('#imageNext').click(function(){
+    nextImage();
+  });
+
+  function nextImage(){
     ++increment;
     if(increment === imagesArray.length){
       increment = 0;
@@ -220,10 +234,16 @@ function initModal(){
     } else{
       imageContainer.innerHTML = '<img src="'+imagesArray[increment]+'">';
     }
-  });
+  }
+
+
 
   // Previous Image
   $('#imagePrev').click(function(){
+    prevImage();
+  });
+
+  function prevImage(){
     --increment;
     console.log(increment);
     if(increment === -1){
@@ -232,15 +252,23 @@ function initModal(){
     } else{
       imageContainer.innerHTML = '<img src="'+imagesArray[increment]+'">';
     }
+  }
+
+  $(document).keydown(function(e) {
+      if (modalOpen === true) {
+
+        if (e.keyCode === 37) {
+          prevImage();
+        } else if (e.keyCode === 39){
+          nextImage();
+        } else if (e.keyCode === 27){
+          closeModal();
+        }
+        
+      }
   });
 
 }
-
-
-
-
-
-
 
 
 

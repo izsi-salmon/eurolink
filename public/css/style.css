@@ -144,6 +144,14 @@ a.nav-menu-item{
     left: 0;
 }
 
+.close-icon{
+  font-size: 1.3em;
+  color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+    top: 3vw;
+    right: 3vw;
+}
+
 .image-modal{
   display: flex;
     justify-content: space-around;
@@ -160,6 +168,7 @@ a.nav-menu-item{
 }
 
 .image-modal .chevron{
+  display: block;
   color: #FFF;
 }
 
@@ -545,6 +554,19 @@ hr.gallery-divider{
     #slideName{
       font-size: 1em;
       margin-top: 1em;
+    }
+
+    .image-modal img{
+      max-height: 60vw;
+      max-width: 80%;
+    }
+
+    .image-modal .chevron{
+      font-size: 1.5em;
+    }
+
+    .close-icon{
+      font-size: 1.7em;
     }
 
     .heading{
