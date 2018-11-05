@@ -49,12 +49,12 @@ html, .black{
 
 .nav-menu :nth-child(odd){
     color: #FFF;
-    background-color: #5C5C5C; // light alt #C4C4C4
+    background-color: #5C5C5C;
 }
 
 .nav-menu :nth-child(even){
     color: #FFF;
-    background-color: #616161; // light alt #BDBDBD
+    background-color: #616161;
 }
 
 a.nav-menu-item{
@@ -115,9 +115,6 @@ a.nav-menu-item{
 
 .quote-container{
   color: #FFF;
-  /* background: rgba(255, 255, 255, 0.5); */
-  /* background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 80%, rgba(255, 255, 255, 0) 100%); */
-  /* background-image: radial-gradient(rgba(0, 0, 0, 0.5)30%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)); */
   margin: 0 1em 1em 0;
   text-align: right;
   width: 60%;
@@ -209,6 +206,10 @@ a.nav-menu-item{
     justify-content: space-between;
     align-items: center;
   padding: 2vw 7vw;
+}
+
+.wrap-text{
+    display: block;
 }
 
 .tours-tab i{
@@ -359,9 +360,10 @@ hr.gallery-divider{
 }
 
 .gallery-img{
+  object-fit: cover;
+  cursor: pointer;
   height: 26vw;
   width: 26vw;
-  object-fit: cover;
 }
 
 .footer{
@@ -445,6 +447,10 @@ hr.gallery-divider{
 
     .tours-tab{
         font-size: 1.5em;
+    }
+    
+    .wrap-text{
+        display: inline;
     }
 
     .tour-block p{
@@ -562,10 +568,12 @@ hr.gallery-divider{
     }
 
     .image-modal .chevron{
+      cursor: pointer;
       font-size: 1.5em;
     }
 
     .close-icon{
+      cursor: pointer;
       font-size: 1.7em;
     }
 

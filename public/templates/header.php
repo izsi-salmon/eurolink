@@ -8,10 +8,19 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="./images/logoimage.png">
   <title>Eurolink Tours</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-103933920-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-103933920-1');
+</script>
 </head>
 <body>
   <div class="header">
-    <div class="header-child"><a href="index.php"><img src="http://eurolinktours.co.nz/images/eurolink_logo.jpg" alt="Eurolink Logo"></a></div>
+    <div class="header-child"><a href="index.php"><img src="http://eurolinktours.co.nz/images/eurolink_logo.png" alt="Eurolink Logo"></a></div>
     <div class="header-child">
         <div id="navButton" class="nav-button"><span class="tab nav-tab">Our Tours <i class="fas fa-caret-down" id="navTabCaret"></i></span></div>
         <div class="header-contact">
