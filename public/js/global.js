@@ -161,7 +161,7 @@ function initTourPage(x){
     bannerImg.style.backgroundImage = "url('"+tourData[x].banner+"')";
 
     tourTitle.innerHTML = tourData[x].title;
-    if(tourdata[x].status){
+    if(tourData[x].status){
         tourStatus.innerHTML = tourData[x].status;
     }
     tourDepart.innerHTML = tourData[x].depart;
