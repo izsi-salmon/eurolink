@@ -9,6 +9,7 @@
           <div class="col-left">
 
             <h2 class="heading" id="tourTitle"></h2>
+            <p class="tour-status" id="tourStatus"></p>
             <p class="main-p tour-info">Next Tour Departs <span id="tourDepart"></span> <span id="tourDate"></span>, $<span id="tourPrice"></span> per person.<br>
             <span id="tourBlurb"></span></p><br>
             <div id="tourDescription"></div><br>

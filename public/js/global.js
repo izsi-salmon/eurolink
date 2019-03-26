@@ -18,6 +18,7 @@ var slideName = document.getElementById('slideName');
 
 // Tour page content
 var tourTitle = document.getElementById('tourTitle');
+var tourStatus = document.getElementById('tourStatus');
 var tourDepart = document.getElementById('tourDepart');
 var tourDate = document.getElementById('tourDate');
 var tourPrice = document.getElementById('tourPrice');
@@ -146,7 +147,7 @@ function auto(){
 function initIndexContent(){
     slideShow();
     for(i = 0; i < tourData.length; i++) {
-        toursTabContent.innerHTML += '<div class="tour-block"><div class="tour-block-title-flex"><a href="tours.php?id='+tourData[i].id+'" class="tour-block-title link" id="tourLink'+tourData[i].id+'">'+tourData[i].title+'</a><span class="tour-block-title">$'+tourData[i].price +' NZD</span></div><p><span class="black wrap-text">Next tour departs: </span>'+tourData[i].depart+' '+tourData[i].date.day+' '+tourData[i].date.month+' '+tourData[i].date.year+'</p><p>'+tourData[i].blurb+'</p></div>';
+        toursTabContent.innerHTML += '<div class="tour-block"><div class="tour-block-title-flex"><a href="tours.php?id='+tourData[i].id+'" class="tour-block-title link" id="tourLink'+tourData[i].id+'">'+tourData[i].title+'</a><span class="tour-block-title">$'+tourData[i].price +' NZD</span></div><p><span class="black wrap-text">Next tour departs: </span>'+tourData[i].depart+' '+tourData[i].date.day+' '+tourData[i].date.month+' '+tourData[i].date.year+'</p><p>'+tourData[i].status+'</p><p>'+tourData[i].blurb+'</p></div>';
     }
 }
 
@@ -160,6 +161,9 @@ function initTourPage(x){
     bannerImg.style.backgroundImage = "url('"+tourData[x].banner+"')";
 
     tourTitle.innerHTML = tourData[x].title;
+    if(tourdata[x].status){
+        tourStatus.innerHTML = tourData[x].status;
+    }
     tourDepart.innerHTML = tourData[x].depart;
     tourDate.innerHTML = tourData[x].date.day+' '+tourData[x].date.month+' '+tourData[x].date.year;
     tourPrice.innerHTML = tourData[x].price;
