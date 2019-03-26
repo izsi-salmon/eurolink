@@ -14,6 +14,10 @@ html, .black{
     font-weight: 600;
 }
 
+.allcaps{
+    text-transform: uppercase;
+}
+
 .text-secondary{
   color: #777777;
 }
@@ -181,7 +185,7 @@ a.nav-menu-item{
 
 .heading{
   font-weight: 200;
-  margin-bottom: 2vh;
+  margin-bottom: 0.5em;
 }
 
 .mid-heading{
@@ -251,6 +255,11 @@ a.nav-menu-item{
     display: block;
   margin: 2em auto 0 auto;
   max-width: 100%;
+}
+
+.tour-status{
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
 }
 
 .tour-info{
