@@ -119,7 +119,7 @@ if(page === 'home'){
 
 // SLIDESHOW
 
-var arrSlideImages = ["images/adriatic.jpg","images/czech-banner.jpg","images/crete-banner.jpg","images/turkey-banner.jpg"];
+var arrSlideImages = ["images/adriatic-banner.jpg","images/czech-banner.jpg","images/crete-banner.jpg","images/turkey-banner.jpg"];
 var arrSlideQuotes = ["A fantastic holiday filled with beautiful scenery, history and great travelling companions. Karen and Russel were our tour guides par excellence and we would not hesitate to recommend or travel with them again.", "What a great tour we wished we could go around again!", "Our third tour with Eurolink and Russel and Karen always manage to make it special. Great communicators, they make everything flow so easily", "What an amazing trip everyday a surprise! Thanks to you both for knowing what would comprise a brilliant look and taste of Turkey. A treasure of a trip."];
 var arrSlideNames = ['– Ingrid and George 2015', '– Jim and Jill 2013', '– Pam and Geoff 2014', '– Sandie 2012'];
 

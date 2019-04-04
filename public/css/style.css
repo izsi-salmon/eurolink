@@ -6,6 +6,14 @@
   padding: 0;
 }
 
+body{
+    font-size: 16px;
+}
+
+_:-ms-lang(x), body{ 
+    font-size: 13px;
+}
+
 html, .black{
     color: #333333;
 }
@@ -23,9 +31,11 @@ html, .black{
 }
 
 .header{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
 }
 
 .header-child{
@@ -49,7 +59,7 @@ html, .black{
     text-transform: uppercase;
 }
 
-/* change to darker greys*/
+/* change to darker greys */
 
 .nav-menu :nth-child(odd){
     color: #FFF;
@@ -488,8 +498,9 @@ hr.gallery-divider{
     }
 
     .sm-icons{
-        font-size: 3.5em;
-        width: 40%;
+        font-size: 2.5em;
+        max-width: 120px;
+        width: 30%;
     }
 
 }
@@ -536,7 +547,8 @@ hr.gallery-divider{
         font-size: 1em;
     }
 
-    .nav-menu-item{
+    .nav-menu-item{        
+        font-size: 1vw;
         padding: 2em;
         flex: 1;
     }
@@ -551,7 +563,7 @@ hr.gallery-divider{
     }
 
     .quote-container{
-      background-color: rgba(255, 255, 255, 0.5);
+      background-color: rgba(255, 255, 255, 0.7);
       margin: 0;
       height: 100%;
       width: 40%;
@@ -635,6 +647,10 @@ hr.gallery-divider{
         margin: 0;
         width: 429px;
     }
+    
+    _:-ms-lang(x), .tours-box{
+        width: 379px;
+    }
 
     .tours-tab{
         justify-content: center;
@@ -650,13 +666,8 @@ hr.gallery-divider{
         overflow-y: scroll;
     }
 
-    .tour-block p{
-    }
-
-    .tour-block-title{
-    }
-
-    .tour-block-title{
+    _:-ms-lang(x), .tours-tab-open{
+            max-height: 450px;
     }
 
     .itinerary-box{
@@ -722,12 +733,13 @@ hr.gallery-divider{
 
     .footer{
         margin-top: 7em;
-        padding: 4em 15vw 1em 15vw;
+        padding: 4em 7.5vw 1em 7.5vw;
     }
 
     .sm-icons{
         justify-content: flex-end;
         margin: -1em 0 0 0;
+        max-width: none;
         width: 100%;
     }
 
@@ -740,7 +752,3 @@ hr.gallery-divider{
     }
 
 }
-
-/*
-
-FIX SIDE SCROLL, VW ISSUE???
