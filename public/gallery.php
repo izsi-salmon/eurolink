@@ -1,8 +1,10 @@
 <?php require 'templates/header.php'; ?>
 <?php
   $id = $_GET['id'];
-  $directory = "images/".$id;
-  $images = glob($directory . "/*.jpg");
+  $thumbnailDirectory = "images/".$id."/thumbnails";
+  $thumbnails = glob($thumbnailDirectory . "/*.jpg");
+  $imageDirectory = "images/".$id;
+  $images = glob($imageDirectory . "/*.jpg");
  ?>
   <div id="bannerImg">
   </div>
@@ -11,8 +13,8 @@
     <!-- <span id="galleryBlurb"></span></p><br> -->
     <hr class="gallery-divider">
       <div id="gallery">
-        <?php foreach ($images as $key => $image):?>
-          <img src="<?= $image ?>" class="gallery-img" id="<?= $key ?>">
+        <?php foreach ($thumbnails as $key => $thumbnail):?>
+          <img src="<?= $thumbnail ?>" class="gallery-img" id="<?= $key ?>">
         <?php endforeach; ?>
       </div>
   </div>
@@ -34,13 +36,14 @@
 
       <div class="aligner-top"></div>
         <div class="image-modal">
-          <div class="chevron"><i class="fas fa-chevron-left chevron" id="imagePrev"></i></div> <div id="imageContainer"></div> <div class="chevron"><i class="fas fa-chevron-right chevron" id="imageNext"></i></div>
+          <div class="chevron"><i class="fas fa-chevron-left chevron chevron-left" id="imagePrev"></i></div> <div id="imageContainer"></div> <div class="chevron"><i class="fas fa-chevron-right chevron chevron-right" id="imageNext"></i></div>
         </div>
       <div class="aligner-bottom"></div>
 
   </div>
 
   <script>
+      var thumbnailsArray = <?php echo json_encode($thumbnails); ?>;
       var imagesArray = <?php echo json_encode($images); ?>;
       var page = 'gallery';
       var pageID = <?= $id ?>;

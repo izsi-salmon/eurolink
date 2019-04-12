@@ -173,9 +173,38 @@ a.nav-menu-item{
   margin: auto;
 }
 
+_:-ms-lang(x), .image-modal{ 
+    display: block;
+}
+
+_:-ms-lang(x), .chevron{
+    position: fixed;
+}
+
+_:-ms-lang(x), .chevron-left{
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+_:-ms-lang(x), .chevron-right{
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .image-modal img{
   max-height: 90%;
   max-width: 90%;
+}
+
+_:-ms-lang(x), .image-modal img {
+    max-height: 90vh;
+    max-width: 80%;
+    position: absolute;
+        top: 50%;
+        left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .image-modal .chevron{
@@ -586,6 +615,11 @@ hr.gallery-divider{
     .image-modal img{
       max-height: 60vw;
       max-width: 80%;
+    }
+    
+    _:-ms-lang(x), .image-modal img{
+        max-height: 90vh;
+        max-width: 80%;
     }
 
     .image-modal .chevron{

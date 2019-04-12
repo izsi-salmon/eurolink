@@ -119,9 +119,9 @@ if(page === 'home'){
 
 // SLIDESHOW
 
-var arrSlideImages = ["images/adriatic-banner.jpg","images/czech-banner.jpg","images/crete-banner.jpg","images/turkey-banner.jpg"];
-var arrSlideQuotes = ["A fantastic holiday filled with beautiful scenery, history and great travelling companions. Karen and Russel were our tour guides par excellence and we would not hesitate to recommend or travel with them again.", "What a great tour we wished we could go around again!", "Our third tour with Eurolink and Russel and Karen always manage to make it special. Great communicators, they make everything flow so easily", "What an amazing trip everyday a surprise! Thanks to you both for knowing what would comprise a brilliant look and taste of Turkey. A treasure of a trip."];
-var arrSlideNames = ['– Ingrid and George 2015', '– Jim and Jill 2013', '– Pam and Geoff 2014', '– Sandie 2012'];
+var arrSlideImages = ["images/adriatic-banner.jpg","images/czech-banner.jpg","images/crete-banner.jpg","images/turkey-banner.jpg", "images/sicily-banner.jpg"];
+var arrSlideQuotes = ["Really experience the local culture - travel with these relaxed and friendly guides and make every tour memorable", "What a great tour we wished we could go around again!", "Our third tour with Eurolink and Russel and Karen always manage to make it special. Great communicators, they make everything flow so easily", "What an amazing trip everyday a surprise! Thanks to you both for knowing what would comprise a brilliant look and taste of Turkey. A treasure of a trip.","Our tour with you guys was just awesome…so enjoyable for a host of reasons. The pace of each day was stimulating yet restful, variety of experiences was well thought through, emphasis on quality food and wine was appreciated, and most importantly the choice of people meant there was never any tension… somewhat rare!! You are really an amazing team."];
+var arrSlideNames = ['– Shona and Chris 2018', '– Jim and Jill 2013', '– Pam and Geoff 2014', '– Sandie 2012', '– Alison 2018'];
 
 index = 0;
 
@@ -129,7 +129,7 @@ function slideShow(){
   bannerImg.style.backgroundImage = "url('"+arrSlideImages[0]+"')";
   quote.innerHTML = '"'+arrSlideQuotes[0]+'"';
   slideName.innerHTML = arrSlideNames[0];
-  window.setInterval('auto()', 5000);
+  window.setInterval('auto()', 10000);
 }
 
 function auto(){
@@ -157,7 +157,6 @@ function initIndexContent(){
 // ------------------------------- INIT TOUR PAGE CONTENT ----------------------------------
 
 function initTourPage(x){
-    // console.log('initTourPage is invoked on: '+x);
     bannerImg.style.backgroundImage = "url('"+tourData[x].banner+"')";
 
     tourTitle.innerHTML = tourData[x].title;
@@ -194,8 +193,6 @@ function initGalleryPage(y){
 }
 
 // ------------------------------- INIT MODAL ----------------------------------
-
-// Add key press controls: esc, < >
 
 function initModal(){
 
@@ -241,7 +238,6 @@ function initModal(){
   }
 
 
-
   // Previous Image
   $('#imagePrev').click(function(){
     prevImage();
@@ -249,7 +245,6 @@ function initModal(){
 
   function prevImage(){
     --increment;
-    console.log(increment);
     if(increment === -1){
       increment = (imagesArray.length - 1);
       imageContainer.innerHTML = '<img src="'+imagesArray[increment]+'">';
@@ -273,9 +268,5 @@ function initModal(){
   });
 
 }
-
-
-
-
 
 // ------------------------------- END ----------------------------------

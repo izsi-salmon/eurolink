@@ -15,7 +15,7 @@
         "description": ["A gorgeous scenic fully guided tour travelling in our own van. Our group size is limited to 8 and we will definitely be exploring all the highlights of these beautiful countries. We will enjoy the warmth and hospitality of the Dalmatian and Slovenian people and drive and walk through stunning scenery. We will be exploring the islands of Korcula, Hvar, Vis and Miljet taking various boats and ferries and enjoying warm swims in the azure Adriatic.", "Local guides will bring History alive for us in Dubrovnik, Split, Zagreb and Ljubljiana. Highlights of this tour are the festivals and musicals taking place at this time of year and walking the walls in Dubrovnik is an unforgettable experience.", "Our accommodation is central, friendly – in fact very generous hosts! – clean and reflects the local flavour. A truly magical tour. We make use of top quality local guides in places of special interest to ensure that you get the most informative and interesting tour.", "It is our goal to provide you with a fun, informative, unique and unforgettable travelling experience through these amazing countries."],
         "itinerary": "files/adriaticAdventure_itinerary2019.pdf",
         "banner": "images/adriatic-banner.jpg",
-        "images": ["images/0/adriaticCastle.jpg","images/0/adriaticPlitLadies.jpg","images/0/lavenderHarvest.jpg"]
+        "images": ["images/0/thumbnails/adriaticCastle.jpg","images/0/thumbnails/adriaticPlitLadies.jpg","images/0/thumbnails/lavenderHarvest.jpg"]
     },
     {
         "id": 1,
@@ -33,7 +33,7 @@
         "description": ["We make a fascinating journey around Sicily learning the secrets of this complicated layered society. Travelling in our own van in a small group limited to 8, we will take our time to get a feel for the history and geography which have forged these people who are Sicilian first Italian second. We enjoy a diversity of food derived from the fusions of Greek Arab and European cuisines which reflect Sicily's interesting past.", "Highlights of this tour include the food! Delicious organic local recipes reflecting the contrast of geographic regions and people. Another highlight is the uniqueness of the landscape from climbing an active Volcano to wandering a maze of lanes in a mountain village hewn from stone (and sweetened with Marzipan) to swimming in the crystal clear waters of the Med.", "We explore the crazy capital Palermo famous for its markets and street foods and take a local guide to spice it up for us. From mountains to sea this place is an island of contrasts.", "We cross the Straits of Messina and travel through Basilicata to UNESCO World Heritage listed Matera. This place built into the side of the ravine is one of Italy's most fascinating icons with stunning churches and cave houses hewn into the rock. We take time on the Salentine Peninsula to absorb the ambience and simplicity of their culture. We cook and eat an array of local dishes then explore the strange stone Trulli houses of Puglia concluding our tour in the gorgeous white town of Ostuni.", "Our accommodation is as varied as the landscape and people and all located in just the right spot! An intriguing tour."],
         "itinerary": "files/sicilyPuglia_itinerary2019.pdf",
         "banner": "images/sicily-banner.jpg",
-        "images": ["images/1/IMG_20180812_195716.jpg","images/1/ArtyPalermo.jpg","images/1/SalentinePeninsula.jpg"]
+        "images": ["images/1/thumbnails/IMG_20180812_195716.jpg","images/1/thumbnails/ArtyPalermo.jpg","images/1/thumbnails/SalentinePeninsula.jpg"]
     },
     {
         "id": 2,
@@ -51,7 +51,7 @@
         "description": ["We travel behind the old iron curtain and become familiar with the psyche of the Czech people who have been part of many Empires and yet kept their own uniqueness intact. We take the time to enjoy the contrasts of isolated scenically beautiful areas like the Adrspach National Park, immerse ourselves in festive town squares alive with dance and music and experience the richness of culture in small towns and in the cities of Vienna, Budapest and Prague. Chamber Music, Opera, Puppetry and various festivals are all on offer at this time of year.", "Highlights include the most beautiful chocolate box Medieval village of Cesky Krumlov, the luxurious spa towns of Marianske Lazne and Karlovy Vary and the dramatic sandstone towers of the Teplice Rocks. The beer also has to have a mention!", "We take our own vehicle and Czech driver from Prague and with our group number limited to 12 we have the flexibility to take up opportunities along the way. We also make use of specialised guides in Budapest Prague and Plzen who bring the past alive with their knowledge and anecdotes.", "Our accommodation is carefully selected to reflect the local flavour and is friendly, clean and within walking distance of sites of interest. In Prague our apartment is right on the Royal Road!", "An informative and fascinating tour."],
         "itinerary": "files/2019CzechRomanceItinJune.pdf",
         "banner": "images/czech-banner.jpg",
-        "images": ["images/2/czechLoket.jpg","images/2/czechPraguearchitecture.jpg","images/2/czechBudapest.jpg"]
+        "images": ["images/2/thumbnails/czechLoket.jpg","images/2/thumbnails/czechPraguearchitecture.jpg","images/2/thumbnails/czechBudapest.jpg"]
     },
     {
         "id": 3,
@@ -69,7 +69,7 @@
         "description": ["We start our tour gazing at the Acropolis from our Hotel terrace then we take a fabulous guided food walk around the city of Athens. We ferret out the obvious and hidden delights which make Athens special then take a short flight to Santorini to admire the most scenic island of Greece.", "We walk the rim and sail to the volcanic islands and experience living on the edge! This place is definitely a photographer’s paradise.", "Crete is our main destination and from Heraklion we take our own van. Our group size is limited to 8 so we can take a smaller vehicle on those scenic off the beaten track roads like the Amari Valley and Omalos Plateau. The food is a real highlight of this country especially the generosity of our hosts plying us with all their delicious natural produce (their form of Raki will be long remembered!).", "We learn about the Cretan History and hardships under Venetian, Turkish, and German occupation and visit places special to our New Zealand connection at Souda Bay and Mon Preveli. The dramatic scenery of the South coast and White Mountains is impressive and we enjoy the music and dancing often chanced upon at this time of year. The sea is warm the sunsets are beautiful and the evenings balmy.", "Our accommodation reflects the local flavour is centrally located friendly and sometimes comes with a swimming pool! A relaxing and memorable tour."],
         "itinerary": "files/crete_itinerary2019.pdf",
         "banner": "images/crete-banner.jpg",
-        "images": ["images/3/cookingExperience.jpg","images/3/creteAthens.jpg","images/3/cretePaleochora.jpg"]
+        "images": ["images/3/thumbnails/cookingExperience.jpg","images/3/thumbnails/creteAthens.jpg","images/3/thumbnails/cretePaleochora.jpg"]
     },
     {
         "id": 4,
@@ -87,7 +87,7 @@
         "description": ["Described by Marco Polo as the finest island of its size in the world, Sri Lanka boasts fabulous beaches, stunning mountains and escarpments, rich lowland jungles and beautiful verdant hill country. Home to extensive populations of elephants, leopards and rare endemic bird species plus blue and sperm whales plying the south coast, Sri Lanka has it all!", "The food is a unique fusion of local produce with recipes and spices brought by Arabs Indians Malays Portuguese Dutch and English. A tea drinkers paradise!!!", "We take our own van and driver and set off up to the tea plantations in the hill country around Kandy and visit the elephant sanctuary along the way. We detour up into the cultural triangle to see marvellous cave temples and golden Buddas. We hike in the dramatic landscape of Worlds End and go leopard spotting at Wilpattu National Park. It’s the right time of year for whale watching in Mirissa and we take our time to enjoy the south coast which reflects remnants of Portuguese and Dutch influences.", "This is an exciting adventure allowing plenty of flexibility to follow our own inclinations."],
         "itinerary": "files/2018SriLankanOdyssey.pdf",
         "banner": "images/srilanka-banner.jpg",
-        "images": ["images/4/ElephantsKandy.jpg","images/4/SriLankaTemple.jpg","images/4/SriLankaTrain.jpg"]
+        "images": ["images/4/thumbnails/ElephantsKandy.jpg","images/4/thumbnails/SriLankaTemple.jpg","images/4/thumbnails/SriLankaTrain.jpg"]
     },
     {
         "id": 5,
@@ -105,6 +105,6 @@
         "description": ["We begin our magical tour in Istanbul a city like something out of Arabian Nights. With our guide we delve into the Topkapi Palace, Aya Sofia and many other secret places tucked away in this beautiful and mysterious city. We fly to the fairyland of Cappadocia to explore this strange lunar landscape visiting the underground city and the open air museum. We take our own van south to the Mediterranean coast and follow the paths of ancient Greeks through their cities and temples culminating in a visit to the Roman city of Ephesus. We then touch our New Zealand History as we wander the battlefields of the Gallipoli Peninsula.", "We take our time to enjoy all the highlights of Turkey spending 2-3 nights in a place having a chance to really get the feel and savour it. We also have the freedom to stop when and where we want and enjoy having the same guide and driver with us for the duration of the tour.", "Our guides share their passion for the history of a very rich past bringing it alive for us with their knowledge and anecdotes.","Our tour takes place during the local harvest time and as we travel around each region we stop and investigate farming techniques and sample the most delicious fresh apricots, melons, figs, peaches and cherries.","Our accommodation is carefully selected to reflect the local flavour and is friendly, clean and within walking distance of sites of interest."],
         "itinerary": "files/2019TimelessTurkeyJuly.pdf",
         "banner": "images/turkey-banner.jpg",
-        "images": ["images/5/TurkeyCapadocia.jpg","images/5/Turkeymudcrop.jpg","images/5/TurkeyPamukkale.jpg"]
+        "images": ["images/5/thumbnails/TurkeyCapadocia.jpg","images/5/thumbnails/Turkeymudcrop.jpg","images/5/thumbnails/TurkeyPamukkale.jpg"]
     }
 ]
