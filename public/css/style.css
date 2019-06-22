@@ -111,7 +111,7 @@ a.nav-menu-item{
 .nav-tab{
   background-color: #65B7EB;
   font-size: 0.7em;
-  padding: 3vw;
+  padding: 1em 3vw;
 }
 
 #bannerImg{
@@ -415,16 +415,18 @@ hr.gallery-divider{
 }
 
 .footer{
-  background-color: #5C5C5C;
+  background-color: #444;
   color: #FFF;
   font-size: 0.9em;
   padding: 2em 1.5em 1.5em 1.5em;
 }
 
 .contact-details{
+/*
   display: flex;
     justify-content: flex-start;
     align-items: center;
+*/
   margin-left: 1em;
   margin-top: 1em;
 }
@@ -437,12 +439,43 @@ hr.gallery-divider{
   font-size: 0.7em;
 }
 
+.promo-box{
+    background-color: #FFF;
+    border: 1px solid #65B7EB;
+    margin: 2em auto 0 auto;
+    max-width: 350px;
+}
+
+.promo-box-title{
+    background-color: #65B7EB;
+    color: #FFF;
+    padding: 0.6em 2em;
+    text-align: center;
+}
+
+.promo-text{
+    color: #777777;
+    font-size: 0.9em;
+    padding: 1em;
+}
+
+.promo-blurb{
+    
+}
+
+.promo-link{
+    color: #65B7EB;
+    margin-top: 0.5em;
+}
+
 .sm-icons{
-  display: flex;
-    justify-content: space-between;
   font-size: 2.5em;
   margin: 1em auto;
-  width: 50%;
+    text-align: center;
+}
+
+.sm-icons :first-child{
+    margin-right: 0.3em;
 }
 
 .sm-icons a:link, .sm-icons a:visited{
@@ -458,7 +491,7 @@ hr.gallery-divider{
   color: #A8A8A8;
   font-size: 0.6em;
   margin-top: 1.5em;
-  text-align: center;
+  text-align: right;
 }
 
 @media only screen and (min-width: 500px) {
@@ -528,8 +561,6 @@ hr.gallery-divider{
 
     .sm-icons{
         font-size: 2.5em;
-        max-width: 120px;
-        width: 30%;
     }
 
 }
@@ -765,20 +796,25 @@ hr.gallery-divider{
       width: 61vw;
     }
 
-    .footer{
+    .footer{        
         margin-top: 7em;
-        padding: 4em 7.5vw 1em 7.5vw;
+        padding: 1em 7.5vw 1em 7.5vw;
     }
-
-    .sm-icons{
-        justify-content: flex-end;
-        margin: -1em 0 0 0;
-        max-width: none;
+    
+    .footer-flex{
+        display: flex;
+            align-items: center;
+            justify-content: space-between;
         width: 100%;
     }
 
+    .sm-icons{
+        margin: 0;
+        width: auto;
+    }
+
     .sm-icons :first-child{
-        margin-right: 1em;
+/*        margin-right: 1em;*/
     }
 
     .copyright-text{

@@ -20,9 +20,9 @@
 </head>
 <body>
   <div class="header">
-    <div class="header-child"><a href="index.php"><img src="http://eurolinktours.co.nz/images/eurolink_logo.png" alt="Eurolink Logo"></a></div>
+    <div class="header-child"><a href="index.php"><img src="http://eurolinktours.co.nz/images/eurolink_logo.png" alt="Eurolink Logo" class="logo"></a></div>
     <div class="header-child">
-        <div id="navButton" class="nav-button"><span class="tab nav-tab">Our Tours <i class="fas fa-caret-down" id="navTabCaret"></i></span></div>
+        <div id="navButton" class="nav-button"><div class="tab nav-tab">Our Tours <i class="fas fa-caret-down" id="navTabCaret"></i></div></div>
         <div class="header-contact">
             <div class="header-contact-text"><span class="strong">Enquiries/bookings: </span><span>0800 488 753</span></div>
             <div class="header-sm"><a href="https://www.instagram.com/eurolinktours/" target="_blank"><i class="fab fa-instagram"></i></a> <a href="https://www.facebook.com/eurolinktoursnz/"  target="_blank"><i class="fab fa-facebook-square"></i></a></div>
