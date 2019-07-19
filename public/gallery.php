@@ -9,7 +9,8 @@
   <div id="bannerImg">
   </div>
   <div class="wrapper-gallery">
-    <h2 class="gallery-title text-secondary" id="galleryTitle"></h2>
+    <p id="galleryBackBtn" class="gallery-back-btn text-secondary"></p>
+    <h2 class="gallery-title" id="galleryTitle"></h2>
     <!-- <span id="galleryBlurb"></span></p><br> -->
     <hr class="gallery-divider">
       <div id="gallery">

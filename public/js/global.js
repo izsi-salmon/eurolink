@@ -32,7 +32,7 @@ var tourImg2 = document.getElementById('tourImg2');
 var tourImg3 = document.getElementById('tourImg3');
 
 // Gallery page CONTENT
-var galleryTitle = document.getElementById('galleryTitle');
+var galleryBackBtn = document.getElementById('galleryBackBtn');
 var imageContainer = document.getElementById('imageContainer');
 
 // ------------------------------- AJAX CALL ----------------------------------
@@ -187,7 +187,8 @@ function initTourPage(x){
 
 function initGalleryPage(y){
     bannerImg.style.backgroundImage = "url('"+tourData[y].banner+"')";
-    galleryTitle.innerHTML = '<a href="tours.php?id='+tourData[y].id+'"><i class="fas fa-chevron-left"></i></a>' + tourData[y].title + '<span></span>';
+    galleryTitle.innerHTML = tourData[y].title;
+    galleryBackBtn.innerHTML = '<a href="tours.php?id='+tourData[y].id+'"><i class="fas fa-long-arrow-alt-left"></i> <span>Back to tour info</span></a>';
     // galleryBlurb.innerHTML = tourData[y].blurb;
     initModal();
 }

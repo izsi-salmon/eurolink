@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Cormorant+Garamond');
 
 *{
-  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -14,7 +13,12 @@ _:-ms-lang(x), body{
     font-size: 13px;
 }
 
-html, .black{
+html{
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+}
+
+.black{
     color: #333333;
 }
 
@@ -53,8 +57,8 @@ html, .black{
 }
 
 .nav-menu{
+    font-family: 'Cormorant Garamond', serif;
     font-size: 0.8em;
-    font-weight: 600;
     text-align: center;
     text-transform: uppercase;
 }
@@ -92,7 +96,7 @@ a.nav-menu-item{
 
 .tab{
   color: #FFF;
-  font-weight: 600;
+  font-family: 'Cormorant Garamond', serif; 
   text-transform: uppercase;
 }
 
@@ -104,8 +108,11 @@ a.nav-menu-item{
 }
 
 .main-p{
-  font-size: 0.8em;
   margin-bottom: 1vh;
+}
+
+.italic-p{
+    font-style: italic;
 }
 
 .nav-tab{
@@ -128,19 +135,24 @@ a.nav-menu-item{
 }
 
 .quote-container{
-  color: #FFF;
+  color: #555;
+  background-color: rgba(255,255,255, 0.7);
+  font-family: 'Cormorant Garamond', serif;
   margin: 0 1em 1em 0;
+  padding: 0.5em;
   text-align: right;
-  width: 60%;
+  max-width: 60%;
 }
 
 #quote{
-  font-size: 0.6em;
+  font-size: 0.7em;
   font-style: italic;
+  text-shadow: 1px 1px 2px rgba(200, 200, 200, 1);
 }
 
 #slideName{
   font-size: 0.6em;
+  font-weight: 600;
   margin-top: 0.6em;
   text-transform: uppercase;
 }
@@ -223,7 +235,8 @@ _:-ms-lang(x), .image-modal img {
 }
 
 .heading{
-  font-weight: 200;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
   margin-bottom: 0.5em;
 }
 
@@ -233,6 +246,8 @@ _:-ms-lang(x), .image-modal img {
 
 .flavour-text{
   color: #777777;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.9em;
   font-style: italic;
   margin-bottom: 2em;
 }
@@ -275,18 +290,19 @@ _:-ms-lang(x), .image-modal img {
 .tour-block-title-flex{
   display: flex;
     justify-content: space-between;
-  font-size: 0.75em;
+  font-family:  'Cormorant Garamond', serif;
+  font-size: 0.8em;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .link:hover{
-   border-bottom: 0.1em solid #65B7EB;
+   border-bottom: 1px solid #65B7EB;
     transition: 0.1s;
 }
 
 .tour-block p{
-  font-size: 0.76em;
+  font-size: 0.7em;
   margin-top: 1vh;
 }
 
@@ -297,12 +313,20 @@ _:-ms-lang(x), .image-modal img {
 }
 
 .tour-status{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1em;
+    font-weight: 600;
     margin-bottom: 0.5em;
     text-transform: uppercase;
 }
 
 .tour-info{
+    font-family: 'Cormorant Garamond', serif; 
+    font-size: 1.2em;
     font-style: italic;
+}
+
+.tour-contact{
     font-weight: 600;
 }
 
@@ -313,9 +337,10 @@ _:-ms-lang(x), .image-modal img {
 }
 
 .itinerary-box-title{
+    font-family:  'Cormorant Garamond', serif; 
     background-color: #65B7EB;
     color: #FFF;
-    padding: 1vw;
+    padding: 0.5em;
     text-align: center;
 }
 
@@ -323,7 +348,9 @@ _:-ms-lang(x), .image-modal img {
     color: #65B7EB;
     display: block;
     font-size: 0.9em;
-    padding: 3vw 4vw;
+    margin: 0 auto;
+    padding: 0.5em;
+    width: 90%;
 }
 
 .preview-photos-wrapper{
@@ -351,12 +378,30 @@ _:-ms-lang(x), .image-modal img {
     text-decoration: none;
 }
 
+.gallery-link i{
+    margin-left: 0.3em;
+    transform: translateY(10%);
+}
+
 .gallery-title{
-  display: flex;
-    justify-content: space-between;
-  align-items: center;
-  font-size: 1em;
-  text-transform: uppercase;
+    font-family:  'Cormorant Garamond', serif;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.gallery-back-btn{
+    margin-bottom: 1em;
+}
+
+.gallery-back-btn a{
+    color: inherit;
+    font-style: italic;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.gallery-back-btn a{
+    margin-right: 0.3em;
 }
 
 .gallery-title a:link, .gallery-title a:active, .gallery-title a:visited, .gallery-title a:hover{
@@ -420,13 +465,13 @@ hr.gallery-divider{
   font-size: 0.9em;
   padding: 2em 1.5em 1.5em 1.5em;
 }
+    
+.footer-title{
+    font-family:  'Cormorant Garamond', serif;
+    font-size: 1.2em;
+}
 
 .contact-details{
-/*
-  display: flex;
-    justify-content: flex-start;
-    align-items: center;
-*/
   margin-left: 1em;
   margin-top: 1em;
 }
@@ -440,32 +485,33 @@ hr.gallery-divider{
 }
 
 .promo-box{
-    background-color: #FFF;
-    border: 1px solid #65B7EB;
+    background-color: rgba(255,255,255, 0.5);
+    border: 1px solid #FFF;
     margin: 2em auto 0 auto;
     max-width: 350px;
 }
 
 .promo-box-title{
-    background-color: #65B7EB;
-    color: #FFF;
+    background-color: #FFF;
+    color: #333;
+    font-size: 0.9em;
     padding: 0.6em 2em;
     text-align: center;
 }
 
 .promo-text{
-    color: #777777;
-    font-size: 0.9em;
+    font-size: 0.8em;
     padding: 1em;
 }
 
-.promo-blurb{
-    
+.promo-link{
+    color: #FFF;
+    margin-top: 0.5em;
+    transition: 0.3s;
 }
 
-.promo-link{
+.promo-link:hover{
     color: #65B7EB;
-    margin-top: 0.5em;
 }
 
 .sm-icons{
@@ -491,7 +537,7 @@ hr.gallery-divider{
   color: #A8A8A8;
   font-size: 0.6em;
   margin-top: 1.5em;
-  text-align: right;
+  text-align: center;
 }
 
 @media only screen and (min-width: 500px) {
@@ -510,7 +556,6 @@ hr.gallery-divider{
     }
 
     .main-p{
-      font-size: 1em;
       margin-bottom: 2vh;
     }
 
@@ -520,6 +565,10 @@ hr.gallery-divider{
 
     .quote-container{
       margin: 0 1.5em 1.5em 0;
+    }
+    
+    .flavour-text{
+      font-size: 1.2em;
     }
 
     .tours-box{
@@ -535,7 +584,7 @@ hr.gallery-divider{
     }
 
     .tour-block p{
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     .tour-block-title{
@@ -553,6 +602,10 @@ hr.gallery-divider{
     .preview-photo{
         height: 22vw;
         width: 22vw;
+    }
+    
+    .gallery-title{
+        font-size: 2.5em;
     }
 
     .footer{
@@ -604,7 +657,7 @@ hr.gallery-divider{
 
     .nav-menu{
         display: flex;
-        font-size: 1em;
+        font-size: 2em;
     }
 
     .nav-menu-item{        
@@ -615,7 +668,6 @@ hr.gallery-divider{
 
     a.nav-menu-item{
         text-decoration: none;
-        padding: 2em;
     }
 
     #bannerImg{
@@ -625,17 +677,23 @@ hr.gallery-divider{
     .quote-container{
       background-color: rgba(255, 255, 255, 0.7);
       margin: 0;
+      padding: 0 2em;
+      position: relative;
       height: 100%;
-      width: 40%;
+      width: 30%;
     }
 
     .quote-wrapper{
       color: #333333;
-      padding: 25% 5%;
+      margin: 0 auto;
+      position: relative;
+          top: 50%;
+      transform: translateY(-50%);
     }
 
     #quote{
-      font-size: 1em;
+      font-size: 1.1em;
+        text-shadow: none;
     }
 
     #slideName{
@@ -664,7 +722,7 @@ hr.gallery-divider{
     }
 
     .heading{
-        font-size: 3em;
+        font-size: 3.5em;
     }
 
     .wrapper{
@@ -741,18 +799,6 @@ hr.gallery-divider{
         margin: 2.5em 0 0 0;
     }
 
-    .itinerary-box-title{
-        background-color: #65B7EB;
-        color: #FFF;
-        padding: 1vw;
-        text-align: center;
-    }
-
-    .itinerary-link{
-        font-size: 0.9em;
-        padding: 2em 2em;
-    }
-
     .preview-photos-wrapper{
         display: block;
     }
@@ -765,26 +811,15 @@ hr.gallery-divider{
 
     .gallery-link{
         margin-top: 1.2em;
-        text-align: center;
     }
 
     .gallery-img{
       height: 20vw;
       width: 20vw;
     }
-
+    
     .gallery-title{
-      display: flex;
-        justify-content: flex-start;
-      align-items: center;
-      font-size: 1.2em;
-      text-transform: uppercase;
-      margin: auto;
-      width: 77%;
-    }
-
-    .gallery-title a{
-      margin-right: 1em;
+        font-size: 3em;
     }
 
     hr.gallery-divider{
@@ -799,6 +834,10 @@ hr.gallery-divider{
     .footer{        
         margin-top: 7em;
         padding: 1em 7.5vw 1em 7.5vw;
+    }
+    
+    .footer-title{
+        font-size: 1.3em
     }
     
     .footer-flex{
@@ -819,6 +858,7 @@ hr.gallery-divider{
 
     .copyright-text{
         margin-top: 4em;
+        text-align: right;
     }
 
 }

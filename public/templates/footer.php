@@ -2,7 +2,7 @@
     <div class="footer-flex">
     
         <div>
-            <p>CONTACT US:</p>
+            <p class="footer-title">CONTACT US:</p>
             <div class="contact-details"><i class="fas fa-envelope contact-icon"></i><span class="contact-text">eurolink@xtra.co.nz</span></div>
             <div class="contact-details"><i class="fas fa-phone contact-icon"></i><span class="contact-text">0800 488 753 OR +64 3 525 9770</span></div>
         </div>
