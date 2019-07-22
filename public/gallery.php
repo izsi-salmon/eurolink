@@ -15,7 +15,7 @@
     <hr class="gallery-divider">
       <div id="gallery">
         <?php foreach ($thumbnails as $key => $thumbnail):?>
-          <img src="<?= $thumbnail ?>" class="gallery-img" id="<?= $key ?>">
+         <span class="gallery-img-container"><img src="<?= $thumbnail ?>" class="gallery-img" id="<?= $key ?>"></span>
         <?php endforeach; ?>
       </div>
   </div>

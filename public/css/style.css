@@ -158,7 +158,7 @@ a.nav-menu-item{
 }
 
 .drop-shadow{
-  background-color: #000;
+  background-color: rgba(255,255,255, 1);
   display: none;
   position: fixed;
     top: 0;
@@ -169,7 +169,7 @@ a.nav-menu-item{
 
 .close-icon{
   font-size: 1.3em;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.5);
   position: absolute;
     top: 3vw;
     right: 3vw;
@@ -221,7 +221,7 @@ _:-ms-lang(x), .image-modal img {
 
 .image-modal .chevron{
   display: block;
-  color: #FFF;
+  color: rgba(0,0,0,0.5);
 }
 
 .wrapper{
@@ -241,6 +241,7 @@ _:-ms-lang(x), .image-modal img {
 }
 
 .mid-heading{
+  font-size: 2em;
   margin-top: 4vh;
 }
 
@@ -452,10 +453,24 @@ hr.gallery-divider{
 
 }
 
+.gallery-img-container{
+  display: inline-block;
+  height: 26vw;
+  overflow: hidden;
+  width: 26vw;
+}
+
+.gallery-img-container:hover .gallery-img{
+  transform: scale(1.1);
+}
+
 .gallery-img{
   object-fit: cover;
   cursor: pointer;
   height: 26vw;
+  max-width: 100%;
+  transform: scale(1);
+  transition: 0.5s;
   width: 26vw;
 }
 
@@ -713,12 +728,13 @@ hr.gallery-divider{
 
     .image-modal .chevron{
       cursor: pointer;
-      font-size: 1.5em;
+      font-size: 2em;
+      padding: 0.5em;
     }
 
     .close-icon{
       cursor: pointer;
-      font-size: 1.7em;
+      font-size: 2em;
     }
 
     .heading{
@@ -814,6 +830,11 @@ hr.gallery-divider{
     }
 
     .gallery-img{
+      height: 20vw;
+      width: 20vw;
+    }
+    
+    .gallery-img-container{
       height: 20vw;
       width: 20vw;
     }
