@@ -23,11 +23,13 @@
   <!-- Modals here! :) -->
   <div class="drop-shadow">
 
-    <div class="close-icon"><i class="fas fa-times"></i></div>
+    <div class="close-icon"><img src="images/cross.png" alt="close icon"></div>
 
       <div class="aligner-top"></div>
         <div class="image-modal">
-          <div class="chevron"><i class="fas fa-chevron-left chevron chevron-left" id="imagePrev"></i></div> <div id="imageContainer"></div> <div class="chevron"><i class="fas fa-chevron-right chevron chevron-right" id="imageNext"></i></div>
+          <div class="chevron"><img src="images/arrow-left.png" class="chevron chevron-left" id="imagePrev" alt="arrow left"></div>
+          <div id="imageContainer"></div>
+          <div class="chevron"><img src="images/arrow-right.png" class="chevron chevron-right" id="imageNext" alt=" arrow right"></div>
         </div>
       <div class="aligner-bottom"></div>
 

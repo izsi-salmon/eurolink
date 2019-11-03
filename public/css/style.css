@@ -31,7 +31,7 @@ html{
 }
 
 .text-secondary{
-  color: #777777;
+  color: #A1A1A1;
 }
 
 .header{
@@ -168,11 +168,14 @@ a.nav-menu-item{
 }
 
 .close-icon{
-  font-size: 1.3em;
-  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
   position: absolute;
     top: 3vw;
     right: 3vw;
+}
+
+.close-icon img{
+    width: 16px;
 }
 
 .image-modal{
@@ -221,7 +224,13 @@ _:-ms-lang(x), .image-modal img {
 
 .image-modal .chevron{
   display: block;
-  color: rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+
+.image-modal img.chevron {
+    max-height: none;
+    max-width: none;
+    width: 15px;
 }
 
 .wrapper{
@@ -246,7 +255,7 @@ _:-ms-lang(x), .image-modal img {
 }
 
 .flavour-text{
-  color: #777777;
+  color: #A1A1A1;
   font-family: 'Cormorant Garamond', serif;
   font-size: 0.9em;
   font-style: italic;
@@ -255,7 +264,7 @@ _:-ms-lang(x), .image-modal img {
 
 .tours-box{
   border: 1px solid #65B7EB;
-  color: #777777;
+  color: #A1A1A1;
   margin: 2em auto 4em auto;
 }
 
@@ -549,7 +558,7 @@ hr.gallery-divider{
 }
 
 .copyright-text{
-  color: #A8A8A8;
+  color: #A1A1A1;
   font-size: 0.6em;
   margin-top: 1.5em;
   text-align: center;
@@ -621,6 +630,15 @@ hr.gallery-divider{
     
     .gallery-title{
         font-size: 2.5em;
+    }
+    
+    .close-icon img{
+        width: 20px;
+    }
+    
+    .image-modal img.chevron{
+      width: 25px;
+      padding: 0.5em;
     }
 
     .footer{
@@ -725,16 +743,14 @@ hr.gallery-divider{
         max-height: 90vh;
         max-width: 80%;
     }
-
-    .image-modal .chevron{
-      cursor: pointer;
-      font-size: 2em;
+    
+    .image-modal img.chevron{
+      width: 36px;
       padding: 0.5em;
     }
-
-    .close-icon{
-      cursor: pointer;
-      font-size: 2em;
+    
+    .close-icon img{
+        width: 25px;
     }
 
     .heading{
