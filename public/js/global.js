@@ -41,7 +41,7 @@ var tourData = [];
 
 $.ajax({
     type: "GET",
-    url: "data/tour-data.json",
+    url: "data/tour-data1-0.json",
     dataType: "json",
     success: function(dataFromJSON){
         for(i = 0; i < dataFromJSON.length; i++) {

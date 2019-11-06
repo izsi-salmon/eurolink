@@ -227,7 +227,7 @@ _:-ms-lang(x), .image-modal img {
   cursor: pointer;
 }
 
-.image-modal img.chevron {
+.image-modal img.chevron{
     max-height: none;
     max-width: none;
     width: 15px;
